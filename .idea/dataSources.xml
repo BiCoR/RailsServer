@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3855950845">
+    <data-source source="LOCAL" name="Rails ContactApp: development" uuid="3f93be89-afba-4afb-9ad5-8ea93a006ed8">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/ContactApp_development</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dfc3dfd0dfcbdfc7dfc0dfd9dfc0dfc7</user-password>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-java-5.1.18-bin.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails ContactApp: test" uuid="ee01fc4e-8438-4002-bd7a-94494f401af2">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/ContactApp_test</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dfc3dfd0dfcbdfc7dfc0dfd9dfc0dfc7</user-password>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-java-5.1.18-bin.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails ContactApp: production" uuid="2ea72c61-aa84-4fbe-ac11-7d1125795a07">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1/ContactApp_production</jdbc-url>
+      <user-name>root</user-name>
+      <user-password>dfc3dfd0dfcbdfc7dfc0dfd9dfc0dfc7</user-password>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-java-5.1.18-bin.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+
