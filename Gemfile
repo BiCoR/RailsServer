@@ -5,8 +5,10 @@ gem 'rails', '3.2.16'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql', '~> 2.9.1'
-#gem 'mysql2', with-mysql-dir => 'C:/mysql-connector-c-6.1.3-win32'
+#gem 'mysql', '~> 2.9.1'
+#gem 'mysql2'
+
+gem 'pg'
 
 
 # Gems used only for assets and not required
