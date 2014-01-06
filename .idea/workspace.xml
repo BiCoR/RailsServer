@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f88c90ef-cff9-4e16-ad64-e3fe27979c31" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/push_heroku.cmd" afterPath="$PROJECT_DIR$/push_heroku.cmd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
     </list>
     <ignored path="ContactApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -198,10 +198,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="10" selection-start="339" selection-end="339" vertical-scroll-proportion="-0.035564855" vertical-offset="306" max-vertical-offset="799">
+            <state line="40" column="35" selection-start="800" selection-end="800" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="799">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/application.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="61" column="75" selection-start="2866" selection-end="2866" vertical-scroll-proportion="0.5690377" vertical-offset="765" max-vertical-offset="1292">
               <folding />
             </state>
           </provider>
@@ -292,6 +301,7 @@
         <option value="$PROJECT_DIR$/app/controllers/people_controller.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
       </list>
     </option>
   </component>
@@ -370,6 +380,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ContactApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ContactApp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -949,7 +973,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="10" selection-start="339" selection-end="339" vertical-scroll-proportion="-0.035564855" vertical-offset="306" max-vertical-offset="799">
+        <state line="40" column="35" selection-start="800" selection-end="800" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="75" selection-start="2866" selection-end="2866" vertical-scroll-proportion="0.5690377" vertical-offset="765" max-vertical-offset="1292">
           <folding />
         </state>
       </provider>
