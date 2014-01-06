@@ -4,9 +4,9 @@
     <data-source source="LOCAL" name="Rails ContactApp: development" uuid="3f93be89-afba-4afb-9ad5-8ea93a006ed8">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:dc10upk9cmbef0</jdbc-url>
-      <user-name>eytyxxykumreeg</user-name>
-      <user-password>dfe4dfe5dfcddf9adffedfeddfeddffddf98dfc8dfe6df9ddfd2dfd0dfe2dfe9dfc6df9cdff5df9adfe9dfecdfe3dff2dfd9dfdf</user-password>
+      <jdbc-url>jdbc:postgresql://ec2-54-197-250-52.compute-1.amazonaws.com/dac246hdftjq77</jdbc-url>
+      <user-name>gbzaxejnyhmghf</user-name>
+      <user-password>df98dfd8dfe7df92dfcfdf92dfc5dfe7dfd9dfd0dfdddf93dfdfdf93df9bdf9bdfc2df9ddfd3dfc3dfc6dfe9dfdcdfc6dfe5dfd3</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-java-5.1.18-bin.jar</url>
@@ -16,9 +16,9 @@
     <data-source source="LOCAL" name="Rails ContactApp: test" uuid="ee01fc4e-8438-4002-bd7a-94494f401af2">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:dc10upk9cmbef0</jdbc-url>
-      <user-name>eytyxxykumreeg</user-name>
-      <user-password>dfe4dfe5dfcddf9adffedfeddfeddffddf98dfc8dfe6df9ddfd2dfd0dfe2dfe9dfc6df9cdff5df9adfe9dfecdfe3dff2dfd9dfdf</user-password>
+      <jdbc-url>jdbc:postgresql://ec2-54-197-250-52.compute-1.amazonaws.com/dac246hdftjq77</jdbc-url>
+      <user-name>gbzaxejnyhmghf</user-name>
+      <user-password>df98dfd8dfe7df92dfcfdf92dfc5dfe7dfd9dfd0dfdddf93dfdfdf93df9bdf9bdfc2df9ddfd3dfc3dfc6dfe9dfdcdfc6dfe5dfd3</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-java-5.1.18-bin.jar</url>

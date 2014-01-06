@@ -12,10 +12,14 @@ development:
   adapter: postgresql
   encoding: unicode
 #  reconnect: false
-  database: dc10upk9cmbef0
+
+  database: dac246hdftjq77
   pool: 5
-  username: eytyxxykumreeg
-  password: NOg0TGGW2bL7xzHCl6_0CFIXsu
+  username: gbzaxejnyhmghf
+  password: 2rM8e8oMszw9u911h7yilCvlOy
+  #izamjsjm
+  host: ec2-54-197-250-52.compute-1.amazonaws.com
+
   #izamjsjm
 #  host: localhost
 
@@ -26,10 +30,13 @@ test:
   adapter: postgresql
   encoding: unicode
 #  reconnect: false
-  database: dc10upk9cmbef0
+  database: dac246hdftjq77
   pool: 5
-  username: eytyxxykumreeg
-  password: NOg0TGGW2bL7xzHCl6_0CFIXsu
+  username: gbzaxejnyhmghf
+  password: 2rM8e8oMszw9u911h7yilCvlOy
+  #izamjsjm
+  host: ec2-54-197-250-52.compute-1.amazonaws.com
+
 #  password: izamjsjm
 #  host: localhost
 
