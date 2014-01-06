@@ -42,4 +42,4 @@ production:
   username: eytyxxykumreeg
   password: NOg0TGGW2bL7xzHCl6_0CFIXsu
   #izamjsjm
-#  host: localhost
+  host: ec2-54-197-241-67.compute-1.amazonaws.com

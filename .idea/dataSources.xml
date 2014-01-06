@@ -28,7 +28,7 @@
     <data-source source="LOCAL" name="Rails ContactApp: production" uuid="2ea72c61-aa84-4fbe-ac11-7d1125795a07">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:dc10upk9cmbef0</jdbc-url>
+      <jdbc-url>jdbc:postgresql://ec2-54-197-241-67.compute-1.amazonaws.com/dc10upk9cmbef0</jdbc-url>
       <user-name>eytyxxykumreeg</user-name>
       <user-password>dfe4dfe5dfcddf9adffedfeddfeddffddf98dfc8dfe6df9ddfd2dfd0dfe2dfe9dfc6df9cdff5df9adfe9dfecdfe3dff2dfd9dfdf</user-password>
       <libraries>
