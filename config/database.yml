@@ -14,8 +14,9 @@ development:
 #  reconnect: false
   database: ContactApp
   pool: 5
-  username: ContactApp
-  password: izamjsjm
+#  username: ContactApp
+  password:
+  #izamjsjm
 #  host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -37,6 +38,7 @@ production:
 #  reconnect: false
   database: ContactApp
   pool: 5
-  username: ContactApp
-  password: izamjsjm
+#  username: ContactApp
+  password:
+  #izamjsjm
 #  host: localhost
