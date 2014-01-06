@@ -12,10 +12,10 @@ development:
   adapter: postgresql
   encoding: unicode
 #  reconnect: false
-  database: ContactApp
+  database: dc10upk9cmbef0
   pool: 5
-#  username: ContactApp
-  password:
+  username: eytyxxykumreeg
+  password: NOg0TGGW2bL7xzHCl6_0CFIXsu
   #izamjsjm
 #  host: localhost
 
@@ -26,19 +26,20 @@ test:
   adapter: postgresql
   encoding: unicode
 #  reconnect: false
-  database: ContactApp_test
+  database: dc10upk9cmbef0
   pool: 5
-  username: ContactApp
-  password: izamjsjm
+  username: eytyxxykumreeg
+  password: NOg0TGGW2bL7xzHCl6_0CFIXsu
+#  password: izamjsjm
 #  host: localhost
 
 production:
   adapter: postgresql
   encoding: unicode
 #  reconnect: false
-  database: ContactApp
+  database: dc10upk9cmbef0
   pool: 5
-#  username: ContactApp
-  password:
+  username: eytyxxykumreeg
+  password: NOg0TGGW2bL7xzHCl6_0CFIXsu
   #izamjsjm
 #  host: localhost
