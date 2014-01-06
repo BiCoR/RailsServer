@@ -1,4 +1,4 @@
 git add .
 git commit -m "autocommit"
-git push heroku master
+git push heroku master> push.log
 pause
