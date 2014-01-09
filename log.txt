@@ -1,0 +1,101 @@
+2014-01-09T15:52:28.675143+00:00 app[web.1]: ActionView::Template::Error (apple-touch-icon-144x144-precomposed.png isn't precompiled):
+2014-01-09T15:52:28.675143+00:00 app[web.1]:     18:     <!-- Size should be 144 x 144 pixels -->
+2014-01-09T15:52:28.675143+00:00 app[web.1]:     16: 
+2014-01-09T15:52:28.675143+00:00 app[web.1]:     17:     <!-- For third-generation iPad with high-resolution Retina display: -->
+2014-01-09T15:52:28.675143+00:00 app[web.1]:     19:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+2014-01-09T15:52:28.675143+00:00 app[web.1]:     21:     <!-- For iPhone with high-resolution Retina display: -->
+2014-01-09T15:52:28.675143+00:00 app[web.1]:     20: 
+2014-01-09T15:52:28.675343+00:00 app[web.1]: 
+2014-01-09T15:52:28.675343+00:00 app[web.1]: 
+2014-01-09T15:52:28.675143+00:00 app[web.1]:     22:     <!-- Size should be 114 x 114 pixels -->
+2014-01-09T15:52:28.675143+00:00 app[web.1]:   app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb___1160268952307365606_70166826449260'
+2014-01-09T15:52:28.465679+00:00 heroku[router]: at=info method=GET path=/ host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=21ms status=302 bytes=108
+2014-01-09T15:55:15.195652+00:00 heroku[api]: Starting process with command `bundle exec rake assets:clean` by mike.feustel@it2011.ba-leipzig.de
+2014-01-09T15:55:19.452100+00:00 heroku[run.7409]: Awaiting client
+2014-01-09T15:55:19.477319+00:00 heroku[run.7409]: Starting process with command `bundle exec rake assets:clean`
+2014-01-09T15:55:19.683348+00:00 heroku[run.7409]: State changed from starting to up
+2014-01-09T15:55:24.498448+00:00 heroku[run.7409]: State changed from up to complete
+2014-01-09T15:55:24.478014+00:00 heroku[run.7409]: Process exited with status 0
+2014-01-09T15:55:41.052707+00:00 heroku[api]: Starting process with command `bundle exec rake assets:precompile` by mike.feustel@it2011.ba-leipzig.de
+2014-01-09T15:55:46.146638+00:00 heroku[run.7963]: Awaiting client
+2014-01-09T15:55:46.184154+00:00 heroku[run.7963]: Starting process with command `bundle exec rake assets:precompile`
+2014-01-09T15:55:46.279831+00:00 heroku[run.7963]: State changed from starting to up
+2014-01-09T15:56:18.304306+00:00 heroku[run.7963]: Process exited with status 0
+2014-01-09T15:56:18.361242+00:00 heroku[run.7963]: State changed from up to complete
+2014-01-09T15:56:23.344993+00:00 app[web.1]: Started GET "/login" for 89.186.129.13 at 2014-01-09 15:56:23 +0000
+2014-01-09T15:56:23.349494+00:00 app[web.1]: Processing by Devise::SessionsController#new as HTML
+2014-01-09T15:56:23.355664+00:00 app[web.1]:   Rendered devise/sessions/new.html.erb within layouts/application (4.1ms)
+2014-01-09T15:56:23.357397+00:00 app[web.1]: Completed 500 Internal Server Error in 7.6ms
+2014-01-09T15:56:23.355414+00:00 app[web.1]:   Rendered devise/shared/_links.erb (1.0ms)
+2014-01-09T15:56:23.359541+00:00 app[web.1]:     17:     <!-- For third-generation iPad with high-resolution Retina display: -->
+2014-01-09T15:56:23.359541+00:00 app[web.1]: 
+2014-01-09T15:56:23.359541+00:00 app[web.1]: ActionView::Template::Error (apple-touch-icon-144x144-precomposed.png isn't precompiled):
+2014-01-09T15:56:23.359541+00:00 app[web.1]:     16: 
+2014-01-09T15:56:23.359541+00:00 app[web.1]:     18:     <!-- Size should be 144 x 144 pixels -->
+2014-01-09T15:56:23.359541+00:00 app[web.1]:     22:     <!-- Size should be 114 x 114 pixels -->
+2014-01-09T15:56:23.359738+00:00 app[web.1]: 
+2014-01-09T15:56:23.359541+00:00 app[web.1]:     19:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+2014-01-09T15:56:23.359541+00:00 app[web.1]:   app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb___1160268952307365606_70166826449260'
+2014-01-09T15:56:23.359541+00:00 app[web.1]:     21:     <!-- For iPhone with high-resolution Retina display: -->
+2014-01-09T15:56:23.359541+00:00 app[web.1]:     20: 
+2014-01-09T15:56:23.359738+00:00 app[web.1]: 
+2014-01-09T15:56:32.698109+00:00 app[web.1]: Started GET "/users/login" for 89.186.129.13 at 2014-01-09 15:56:32 +0000
+2014-01-09T15:56:32.700987+00:00 app[web.1]: Processing by UsersController#show as HTML
+2014-01-09T15:56:32.700987+00:00 app[web.1]:   Parameters: {"id"=>"login"}
+2014-01-09T15:56:32.702362+00:00 app[web.1]: Completed 401 Unauthorized in 1.1ms
+2014-01-09T15:56:32.716223+00:00 heroku[router]: at=info method=GET path=/users/login host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=24ms service=55ms status=302 bytes=108
+2014-01-09T15:56:32.864664+00:00 app[web.1]: Processing by Devise::SessionsController#new as HTML
+2014-01-09T15:56:32.861988+00:00 app[web.1]: Started GET "/login" for 89.186.129.13 at 2014-01-09 15:56:32 +0000
+2014-01-09T15:56:32.870303+00:00 app[web.1]:   Rendered devise/shared/_links.erb (0.8ms)
+2014-01-09T15:56:32.870392+00:00 app[web.1]:   Rendered devise/sessions/new.html.erb within layouts/application (4.0ms)
+2014-01-09T15:56:32.871893+00:00 app[web.1]: Completed 500 Internal Server Error in 7.1ms
+2014-01-09T15:56:32.873910+00:00 app[web.1]: 
+2014-01-09T15:56:32.873910+00:00 app[web.1]:     18:     <!-- Size should be 144 x 144 pixels -->
+2014-01-09T15:56:32.873910+00:00 app[web.1]: ActionView::Template::Error (apple-touch-icon-144x144-precomposed.png isn't precompiled):
+2014-01-09T15:56:32.873910+00:00 app[web.1]:     17:     <!-- For third-generation iPad with high-resolution Retina display: -->
+2014-01-09T15:56:32.873910+00:00 app[web.1]:     19:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+2014-01-09T15:56:32.873910+00:00 app[web.1]:     16: 
+2014-01-09T15:56:32.873910+00:00 app[web.1]:     21:     <!-- For iPhone with high-resolution Retina display: -->
+2014-01-09T15:56:32.873910+00:00 app[web.1]:     20: 
+2014-01-09T15:56:32.873910+00:00 app[web.1]:   app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb___1160268952307365606_70166826449260'
+2014-01-09T15:56:32.874088+00:00 app[web.1]: 
+2014-01-09T15:56:32.873910+00:00 app[web.1]:     22:     <!-- Size should be 114 x 114 pixels -->
+2014-01-09T15:56:32.874088+00:00 app[web.1]: 
+2014-01-09T15:56:32.877993+00:00 heroku[router]: at=info method=GET path=/login host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=2ms service=17ms status=500 bytes=643
+2014-01-09T15:57:17.029014+00:00 app[web.1]: Started GET "/login" for 89.186.129.13 at 2014-01-09 15:57:17 +0000
+2014-01-09T15:57:17.033880+00:00 app[web.1]: Processing by Devise::SessionsController#new as HTML
+2014-01-09T15:57:17.048257+00:00 app[web.1]:   Rendered devise/sessions/new.html.erb within layouts/application (11.7ms)
+2014-01-09T15:57:17.054311+00:00 app[web.1]: 
+2014-01-09T15:57:17.054311+00:00 app[web.1]: ActionView::Template::Error (apple-touch-icon-144x144-precomposed.png isn't precompiled):
+2014-01-09T15:57:17.054311+00:00 app[web.1]:     16: 
+2014-01-09T15:57:17.054311+00:00 app[web.1]:     17:     <!-- For third-generation iPad with high-resolution Retina display: -->
+2014-01-09T15:57:17.050857+00:00 app[web.1]: Completed 500 Internal Server Error in 16.8ms
+2014-01-09T15:57:17.048080+00:00 app[web.1]:   Rendered devise/shared/_links.erb (6.9ms)
+2014-01-09T15:57:17.054544+00:00 app[web.1]: 
+2014-01-09T15:57:17.054311+00:00 app[web.1]:     18:     <!-- Size should be 144 x 144 pixels -->
+2014-01-09T15:57:17.054311+00:00 app[web.1]:     20: 
+2014-01-09T15:57:17.054311+00:00 app[web.1]:   app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb___1160268952307365606_70166826449260'
+2014-01-09T15:57:17.054311+00:00 app[web.1]:     21:     <!-- For iPhone with high-resolution Retina display: -->
+2014-01-09T15:57:17.054544+00:00 app[web.1]: 
+2014-01-09T15:57:17.054311+00:00 app[web.1]:     22:     <!-- Size should be 114 x 114 pixels -->
+2014-01-09T15:57:17.054311+00:00 app[web.1]:     19:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+2014-01-09T15:56:23.368196+00:00 heroku[router]: at=info method=GET path=/login host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=6ms service=24ms status=500 bytes=643
+2014-01-09T15:57:17.064582+00:00 heroku[router]: at=info method=GET path=/login host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=42ms service=39ms status=500 bytes=643
+2014-01-09T16:11:43.085102+00:00 app[web.1]: Started GET "/login" for 89.186.129.13 at 2014-01-09 16:11:43 +0000
+2014-01-09T16:11:43.088597+00:00 app[web.1]: Processing by Devise::SessionsController#new as HTML
+2014-01-09T16:11:43.105236+00:00 app[web.1]:   Rendered devise/sessions/new.html.erb within layouts/application (11.1ms)
+2014-01-09T16:11:43.105107+00:00 app[web.1]:   Rendered devise/shared/_links.erb (8.4ms)
+2014-01-09T16:11:43.114602+00:00 app[web.1]: 
+2014-01-09T16:11:43.114602+00:00 app[web.1]:     17:     <!-- For third-generation iPad with high-resolution Retina display: -->
+2014-01-09T16:11:43.108183+00:00 app[web.1]: Completed 500 Internal Server Error in 18.0ms
+2014-01-09T16:11:43.114602+00:00 app[web.1]:     21:     <!-- For iPhone with high-resolution Retina display: -->
+2014-01-09T16:11:43.114602+00:00 app[web.1]:     16: 
+2014-01-09T16:11:43.114602+00:00 app[web.1]:     18:     <!-- Size should be 144 x 144 pixels -->
+2014-01-09T16:11:43.114602+00:00 app[web.1]:     22:     <!-- Size should be 114 x 114 pixels -->
+2014-01-09T16:11:43.114602+00:00 app[web.1]:     19:     <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+2014-01-09T16:11:43.114602+00:00 app[web.1]:     20: 
+2014-01-09T16:11:43.114602+00:00 app[web.1]: ActionView::Template::Error (apple-touch-icon-144x144-precomposed.png isn't precompiled):
+2014-01-09T16:11:43.114779+00:00 app[web.1]: 
+2014-01-09T16:11:43.114602+00:00 app[web.1]:   app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb___1160268952307365606_70166826449260'
+2014-01-09T16:11:43.114779+00:00 app[web.1]: 
+2014-01-09T16:11:43.128490+00:00 heroku[router]: at=info method=GET path=/login host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=51ms service=154ms status=500 bytes=643
