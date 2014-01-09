@@ -25,8 +25,19 @@ end
 
 gem 'jquery-rails'
 
+#gem 'execjs'
+
+#gem 'libv8', '~> 3.11.8'
+
+#therubyracer manuell installiert von: https://github.com/hiranpeiris/therubyracer_for_windows
+gem 'therubyracer' #, :platforms => :ruby
+
+
+# Devise Authentification
+gem 'devise'
+
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby' #, '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
@@ -39,3 +50,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'twitter-bootstrap-rails', :git => 'http://github.com/seyhunak/twitter-bootstrap-rails.git'

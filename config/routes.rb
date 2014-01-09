@@ -1,5 +1,28 @@
 ContactApp::Application.routes.draw do
-  resources :people
+
+  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
+  #devise_for :users, :skip => [:sessions]
+  #as :user do
+  #  get 'signin' => 'devise/sessions#new', :as => :new_user_session
+  #  post 'signin' => 'devise/sessions#create', :as => :user_session
+  #  #delete 'signout' => 'devise/sessions#destroy', :as => :destroy_user_session
+  #  match 'signout' => 'devise/sessions#destroy', :as => :destroy_user_session,
+  #        :via => Devise.mappings[:user].sign_out_via
+  #end
+  #
+  #match '/signout' => 'devise/sessions#destroy', :as => :destroy_user_session,
+  #      :via => Devise.mappings[:user].sign_out_via
+  #resources :users
+
+  devise_scope :user do
+    match 'login' => 'devise/sessions#new',  :as => :new_user_session
+    match 'signin' => 'devise/sessions#create', :as => :user_session
+    match 'signout' => 'devise/sessions#destroy', :as => :destroy_user_session
+  end
+
+  resources :users do
+    resources :people #, :module => "people"
+  end
 
 
   # The priority is based upon order of creation:
@@ -51,11 +74,12 @@ ContactApp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'people#index'
+  root :to => 'users#index'
 
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+
 end

@@ -66,5 +66,16 @@ module ContactApp
     config.assets.version = '1.0'
 
     config.assets.initialize_on_precompile = false
+
+    ActionMailer::Base.smtp_settings = {
+      :port           => ENV['MAILGUN_SMTP_PORT'],
+      :address        => ENV['MAILGUN_SMTP_SERVER'],
+      :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+      :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+      :domain         => 'quiet-crag-9089.herokuapp.com',
+      :authentication => :plain,
+    }
+    ActionMailer::Base.delivery_method = :smtp
+
   end
 end
