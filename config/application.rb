@@ -67,7 +67,7 @@ module ContactApp
 
     config.assets.initialize_on_precompile = false
 
-    Devise::Mailer.smtp_settings = {
+    ActionMailer::Base.smtp_settings = {
       :port           => ENV['MAILGUN_SMTP_PORT'],
       :address        => ENV['MAILGUN_SMTP_SERVER'],
       :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
@@ -75,7 +75,7 @@ module ContactApp
       :domain         => 'quiet-crag-9089.herokuapp.com',
       :authentication => :plain,
     }
-    Devise::Mailer.delivery_method = :smtp
+    ActionMailer::Base.delivery_method = :smtp
 
   end
 end

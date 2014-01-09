@@ -1,73 +1,3 @@
-2014-01-09T16:20:55.936066+00:00 app[web.1]:   Rendered devise/mailer/confirmation_instructions.html.erb (1.0ms)
-2014-01-09T16:20:56.436517+00:00 app[web.1]: Redirected to http://quiet-crag-9089.herokuapp.com/
-2014-01-09T16:20:56.438730+00:00 app[web.1]: Completed 302 Found in 1468.7ms (ActiveRecord: 0.0ms)
-2014-01-09T16:20:56.445451+00:00 heroku[router]: at=info method=POST path=/ host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=1497ms status=302 bytes=103
-2014-01-09T16:20:56.443976+00:00 app[web.1]: 
-2014-01-09T16:20:56.443976+00:00 app[web.1]: Sent mail to mike.feustel@it2011.ba-leipzig.de (482.8ms)
-2014-01-09T16:20:56.588121+00:00 app[web.1]: Started GET "/" for 89.186.129.13 at 2014-01-09 16:20:56 +0000
-2014-01-09T16:20:56.591962+00:00 app[web.1]: Processing by UsersController#index as HTML
-2014-01-09T16:20:56.593198+00:00 app[web.1]: Completed 401 Unauthorized in 0.9ms
-2014-01-09T16:20:56.728309+00:00 app[web.1]: Started GET "/login" for 89.186.129.13 at 2014-01-09 16:20:56 +0000
-2014-01-09T16:20:56.731078+00:00 app[web.1]: Processing by Devise::SessionsController#new as HTML
-2014-01-09T16:20:56.736145+00:00 app[web.1]:   Rendered devise/shared/_links.erb (0.9ms)
-2014-01-09T16:20:56.736276+00:00 app[web.1]:   Rendered devise/sessions/new.html.erb within layouts/application (3.7ms)
-2014-01-09T16:20:56.744669+00:00 app[web.1]: Completed 200 OK in 13.5ms (Views: 12.5ms | ActiveRecord: 0.0ms)
-2014-01-09T16:20:56.969717+00:00 heroku[router]: at=info method=GET path=/assets/application-fadff89cab133efb282501c45991b646.js host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=
-1ms service=5ms status=304 bytes=0
-2014-01-09T16:20:56.594093+00:00 heroku[router]: at=info method=GET path=/ host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=5ms service=12ms status=302 bytes=108
-2014-01-09T16:20:56.987049+00:00 heroku[router]: at=info method=GET path=/assets/application-d76072a7ed371cf986fd5fbaa05a8ef6.css host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=10ms service=21ms status=304 bytes=0
-2014-01-09T16:20:56.747624+00:00 heroku[router]: at=info method=GET path=/login host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=4ms service=26ms status=304 bytes=0
-2014-01-09T16:20:26.716966+00:00 heroku[router]: at=info method=GET path=/assets/application-fadff89cab133efb282501c45991b646.js host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=24ms status=304 bytes=0
-2014-01-09T16:29:36.281987+00:00 heroku[run.3480]: Awaiting client
-2014-01-09T16:29:36.287204+00:00 heroku[run.3480]: State changed from starting to up
-2014-01-09T16:29:36.315274+00:00 heroku[run.3480]: Starting process with command `bundle exec rake assets:clean`
-2014-01-09T16:29:41.886203+00:00 heroku[run.3480]: State changed from up to complete
-2014-01-09T16:29:41.874488+00:00 heroku[run.3480]: Process exited with status 0
-2014-01-09T16:29:57+00:00 heroku[slug-compiler]: Slug compilation started
-2014-01-09T16:30:24.014268+00:00 heroku[api]: Deploy 721f61a by mike.feustel@it2011.ba-leipzig.de
-2014-01-09T16:30:24.055549+00:00 heroku[api]: Release v10 created by mike.feustel@it2011.ba-leipzig.de
-2014-01-09T16:30:24+00:00 heroku[slug-compiler]: Slug compilation finished
-2014-01-09T16:30:24.351685+00:00 heroku[web.1]: State changed from up to starting
-2014-01-09T16:30:27.837236+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2014-01-09T16:30:28.534734+00:00 heroku[api]: Starting process with command `bundle exec rake assets:precompile` by mike.feustel@it2011.ba-leipzig.de
-2014-01-09T16:30:28.734064+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
-2014-01-09T16:30:28.734064+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
-2014-01-09T16:30:28.734064+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
-2014-01-09T16:30:28.734064+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:13:in `run'
-2014-01-09T16:30:28.734064+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:55:in `block in <top (required)>'
-2014-01-09T16:30:28.734064+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands/server.rb:70:in `start'
-2014-01-09T16:30:28.734064+00:00 app[web.1]: [2014-01-09 16:30:28] FATAL SignalException: SIGTERM
-2014-01-09T16:30:28.734064+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
-2014-01-09T16:30:28.734064+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/server.rb:268:in `start'
-2014-01-09T16:30:28.734064+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:50:in `tap'
-2014-01-09T16:30:28.734259+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:50:in `<top (required)>'
-2014-01-09T16:30:28.734259+00:00 app[web.1]: 	script/rails:6:in `require'
-2014-01-09T16:30:28.734259+00:00 app[web.1]: 	script/rails:6:in `<main>'
-2014-01-09T16:30:28.734259+00:00 app[web.1]: [2014-01-09 16:30:28] INFO  going to shutdown ...
-2014-01-09T16:30:28.734259+00:00 app[web.1]: [2014-01-09 16:30:28] INFO  WEBrick::HTTPServer#start done.
-2014-01-09T16:30:28.734259+00:00 app[web.1]: Exiting
-2014-01-09T16:30:30.130196+00:00 heroku[web.1]: Process exited with status 143
-2014-01-09T16:30:32.091346+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 11312`
-2014-01-09T16:30:34.038726+00:00 heroku[run.8327]: State changed from starting to up
-2014-01-09T16:30:34.152316+00:00 heroku[run.8327]: Awaiting client
-2014-01-09T16:30:34.190818+00:00 heroku[run.8327]: Starting process with command `bundle exec rake assets:precompile`
-2014-01-09T16:30:34.718316+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2014-01-09T16:30:34.718316+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2014-01-09T16:30:35.066448+00:00 app[web.1]: => Booting WEBrick
-2014-01-09T16:30:35.066448+00:00 app[web.1]: => Rails 3.2.16 application starting in production on http://0.0.0.0:11312
-2014-01-09T16:30:35.066448+00:00 app[web.1]: => Call with -d to detach
-2014-01-09T16:30:35.066448+00:00 app[web.1]: => Ctrl-C to shutdown server
-2014-01-09T16:30:35.066448+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
-2014-01-09T16:30:35.694191+00:00 app[web.1]: [2014-01-09 16:30:35] INFO  ruby 2.0.0 (2013-11-22) [x86_64-linux]
-2014-01-09T16:30:35.694191+00:00 app[web.1]: [2014-01-09 16:30:35] INFO  WEBrick 1.3.1
-2014-01-09T16:30:35.694516+00:00 app[web.1]: [2014-01-09 16:30:35] INFO  WEBrick::HTTPServer#start: pid=2 port=11312
-2014-01-09T16:30:36.314027+00:00 heroku[web.1]: State changed from starting to up
-2014-01-09T16:29:30.933751+00:00 heroku[api]: Starting process with command `bundle exec rake assets:clean` by mike.feustel@it2011.ba-leipzig.de
-2014-01-09T16:31:24.633362+00:00 heroku[run.8327]: Process exited with status 0
-2014-01-09T16:31:24.656268+00:00 heroku[run.8327]: State changed from up to complete
-2014-01-09T16:31:28.704149+00:00 app[web.1]: Started GET "/sign_up" for 89.186.129.13 at 2014-01-09 16:31:28 +0000
-2014-01-09T16:31:28.987682+00:00 app[web.1]: Processing by Devise::RegistrationsController#new as HTML
-2014-01-09T16:31:29.069877+00:00 app[web.1]: [deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
 2014-01-09T16:31:29.081846+00:00 app[web.1]:   Rendered devise/shared/_links.erb (2.2ms)
 2014-01-09T16:31:29.081846+00:00 app[web.1]:   Rendered devise/registrations/new.html.erb within layouts/application (15.0ms)
 2014-01-09T16:31:29.136569+00:00 app[web.1]: Completed 200 OK in 148.7ms (Views: 75.2ms | ActiveRecord: 34.0ms)
@@ -88,7 +18,8 @@
 2014-01-09T16:32:00.456312+00:00 app[web.1]: Completed 200 OK in 17.5ms (Views: 16.0ms | ActiveRecord: 0.0ms)
 2014-01-09T16:32:00.446947+00:00 app[web.1]:   Rendered devise/confirmations/new.html.erb within layouts/application (5.1ms)
 2014-01-09T16:32:00.459922+00:00 heroku[router]: at=info method=GET path=/confirmation/new host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=29ms status=200 bytes=5142
-2014-01-09T16:32:00.671095+00:00 heroku[router]: at=info method=GET path=/assets/application-fadff89cab133efb282501c45991b646.js host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=4ms status=304 bytes=0
+2014-01-09T16:32:00.671095+00:00 heroku[router]: at=info method=GET path=/assets/application-fa
+dff89cab133efb282501c45991b646.js host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=4ms status=304 bytes=0
 2014-01-09T16:32:01.197685+00:00 heroku[router]: at=info method=GET path=/assets/application-d76072a7ed371cf986fd5fbaa05a8ef6.css host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
 2014-01-09T16:32:05.829005+00:00 app[web.1]: Started POST "/confirmation" for 89.186.129.13 at 2014-01-09 16:32:05 +0000
 2014-01-09T16:32:05.875234+00:00 app[web.1]: Processing by Devise::ConfirmationsController#create as HTML
@@ -100,3 +31,74 @@
 2014-01-09T16:32:06.660181+00:00 app[web.1]: 
 2014-01-09T16:32:06.660181+00:00 app[web.1]:   app/mailers/user_mailer.rb:6:in `confirmation_instructions'
 2014-01-09T16:32:06.663585+00:00 heroku[router]: at=info method=POST path=/confirmation host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=837ms status=500 bytes=643
+2014-01-09T16:31:29.686446+00:00 heroku[router]: at=info method=GET path=/assets/application-d76072a7ed371cf986fd5fbaa05a8ef6.css host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=92ms service=34ms status=200 bytes=337618
+2014-01-09T16:37:25.423845+00:00 heroku[run.3109]: Awaiting client
+2014-01-09T16:37:25.547103+00:00 heroku[run.3109]: Starting process with command `bundle exec rake assets:clean`
+2014-01-09T16:37:25.522179+00:00 heroku[run.3109]: State changed from starting to up
+2014-01-09T16:37:32.081022+00:00 heroku[run.3109]: State changed from up to complete
+2014-01-09T16:37:31.982209+00:00 heroku[run.3109]: Process exited with status 0
+2014-01-09T16:37:48+00:00 heroku[slug-compiler]: Slug compilation started
+2014-01-09T16:38:15.332555+00:00 heroku[api]: Deploy c36f807 by mike.feustel@it2011.ba-leipzig.de
+2014-01-09T16:38:15.371414+00:00 heroku[api]: Release v11 created by mike.feustel@it2011.ba-leipzig.de
+2014-01-09T16:38:15+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-01-09T16:38:15.779095+00:00 heroku[web.1]: State changed from up to starting
+2014-01-09T16:38:18.739108+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-01-09T16:38:19.303645+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+2014-01-09T16:38:19.303645+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/we
+brick/server.rb:32:in `start'
+2014-01-09T16:38:19.303645+00:00 app[web.1]: [2014-01-09 16:38:19] FATAL SignalException: SIGTERM
+2014-01-09T16:38:19.303645+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+2014-01-09T16:38:19.303645+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+2014-01-09T16:38:19.303645+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:13:in `run'
+2014-01-09T16:38:19.303645+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/server.rb:268:in `start'
+2014-01-09T16:38:19.303645+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands/server.rb:70:in `start'
+2014-01-09T16:38:19.303645+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:55:in `block in <top (required)>'
+2014-01-09T16:38:19.303645+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:50:in `tap'
+2014-01-09T16:38:19.303885+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:50:in `<top (required)>'
+2014-01-09T16:38:19.303885+00:00 app[web.1]: 	script/rails:6:in `require'
+2014-01-09T16:38:19.303885+00:00 app[web.1]: 	script/rails:6:in `<main>'
+2014-01-09T16:38:19.303885+00:00 app[web.1]: [2014-01-09 16:38:19] INFO  going to shutdown ...
+2014-01-09T16:38:
+19.304267+00:00 app[web.1]: [2014-01-09 16:38:19] INFO  WEBrick::HTTPServer#start done.
+2014-01-09T16:38:19.304400+00:00 app[web.1]: Exiting
+2014-01-09T16:38:20.030101+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 6451`
+2014-01-09T16:38:20.573675+00:00 heroku[web.1]: Process exited with status 143
+2014-01-09T16:38:22.120274+00:00 app[web.1]: /app/config/application.rb:70:in `<class:Application>': uninitialized constant Devise::Mailer (NameError)
+2014-01-09T16:38:22.120274+00:00 app[web.1]: 	from /app/config/application.rb:19:in `<module:ContactApp>'
+2014-01-09T16:38:22.120274+00:00 app[web.1]: 	from /app/config/application.rb:18:in `<top (required)>'
+2014-01-09T16:38:22.120274+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:53:in `require'
+2014-01-09T16:38:22.120274+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:53:in `block in <top (required)>'
+2014-01-09T16:38:22.120274+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:50:in `tap'
+2014-01-09T16:38:22.120274+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:50:in `<top (required)>'
+2014-01-09T16:38:22.120274+00:00 app[web.1]: 	from script/rails:6:in `require'
+2014-01-09T16:38:22.120274+00:00 app[web.1]: 	from script/rails:6:in `<main>'
+2014-01-09T16:38:23.228443+00:00 heroku[web.1]: Process exited with status 1
+2014-01-09T16:38:23.242653+00:00 heroku[web.1]: State changed from crashed to starting
+2014-01-09T16:38:23.241825+00:00 heroku[web.1]: State changed from starting to crashed
+2014-01-09T16:38:25.553866+00:00 heroku[run.4869]: Awaiting client
+2014-01-09T16:38:25.578930+00:00 heroku[run.4869]: State changed from starting to up
+2014-01-09T16:38:25.627156+00:00 heroku[run.4869]: Starting process with command `bundle exec rake assets:precompile`
+2014-01-09T16:38:30.476300+00:00 heroku[run.4869]: Process exited with status 1
+2014-01-09T16:38:30.518340+00:00 heroku[run.4869]: State changed from up to complete
+2014-01-09T16:38:48.398617+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 49406`
+2014-01-09T16:37:13.789671+00:00 heroku[api]: Starting process with command `bundle exec rake assets:clean` by mike.feustel@it2011.ba-leipzig.de
+2014-01-09T16:38:52.152887+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:50:in `<top (required)>'
+2014-01-09T16:38:52.152887+00:00 app[web.1]: /app/config/application.rb:70:in `<class:Application>': uninitialized constant Devise::Mailer (NameError)
+2014-01-09T16:38:52.152887+00:00 app[web.1]: 	from /app/config/application.rb:19:in `<module:ContactApp>'
+2014-01-09T16:38:52.152887+00:00 app[web.1]: 	from /app/config/application.rb:18:in `<top (required)>'
+2014-01-09T16:38:52.152887+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:53:in `require'
+2014-01-09T16:38:52.152887+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:53:in `block in <top (required)>'
+2014-01-09T16:38:52.152887+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:50:in `tap'
+2014-01-09T16:38:52.152887+00:00 app[web.1]: 	from script/rails:6:in `require'
+2014-01-09T16:38:52.152887+00:00 app[web.1]: 	from script/rails:6:in `<main>'
+2014-01-09T16:38:53.537323+00:00 heroku[web.1]: Process exited with status 1
+2014-01-09T16:38:53.566434+00:00 heroku[web.1]: State changed from starting to crashed
+2014-01-09T16:39:15.472563+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/confirmation?confirmation_token=u9ND3x4sVZTeSvRGGPRG host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno= connect= service= status=503 bytes=
+2014-01-09T16:39:19.232423+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno= connect= service= status=503 bytes=
+2014-01-09T16:39:07.008741+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/confirmation?confirmation_token=u9ND3x4sVZTeSvRGGPRG host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno= connect= service= status=503 bytes=
+2014-01-09T16:39:21.714339+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/confirmation?confirmation_token=u9ND3x4sVZTeSvRGGPRG host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno= connect= service= status=503 bytes=
+2014-01-09T16:39:22.755656+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/confirmation?confirmation_token=u9ND3x4sVZTeSvRGGPRG host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno= connect= service= status=503 bytes=
+2014-01-09T16:39:23.013677+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno= connect= service= status=503 bytes=
+2014-01-09T16:39:15.703888+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno= connect= service= status=503 bytes=
+2014-01-09T16:39:32.391717+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path=/confirmation host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno= connect= service= status=503 bytes=
+2014-01-09T16:39:07.587450+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno= connect= service= status=503 bytes=
