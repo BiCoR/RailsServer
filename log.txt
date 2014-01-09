@@ -1,104 +1,102 @@
-2014-01-09T16:31:29.081846+00:00 app[web.1]:   Rendered devise/shared/_links.erb (2.2ms)
-2014-01-09T16:31:29.081846+00:00 app[web.1]:   Rendered devise/registrations/new.html.erb within layouts/application (15.0ms)
-2014-01-09T16:31:29.136569+00:00 app[web.1]: Completed 200 OK in 148.7ms (Views: 75.2ms | ActiveRecord: 34.0ms)
-2014-01-09T16:31:29.147011+00:00 heroku[router]: at=info method=GET path=/sign_up host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=15ms service=462ms status=304 bytes=0
-2014-01-09T16:31:29.615169+00:00 heroku[router]: at=info method=GET path=/assets/application-fadff89cab133efb282501c45991b646.js host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=0ms service=11ms status=200 bytes=140516
-2014-01-09T16:31:43.812884+00:00 app[web.1]: Started POST "/" for 89.186.129.13 at 2014-01-09 16:31:43 +0000
-2014-01-09T16:31:43.816961+00:00 app[web.1]: Processing by Devise::RegistrationsController#create as HTML
-2014-01-09T16:31:43.816961+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"XdizgMGa1sxJajDdz7IyzYQTMoy+lPMXCsTKfacf+8g=", "user"=>{"email"=>"mike.feustel@it2011.ba-leipzig.de", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
-2014-01-09T16:31:43.930324+00:00 app[web.1]:   Rendered devise/shared/_links.erb (0.7ms)
-2014-01-09T16:31:43.930324+00:00 app[web.1]:   Rendered devise/registrations/new.html.erb within layouts/application (4.5ms)
-2014-01-09T16:31:43.940102+00:00 app[web.1]: Completed 200 OK in 122.9ms (Views: 14.9ms | ActiveRecord: 0.0ms)
-2014-01-09T16:31:44.222286+00:00 heroku[router]: at=info method=GET path=/assets/application-fadff89cab133efb282501c45991b646.js host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=8ms status=304 bytes=0
-2014-01-09T16:31:44.286507+00:00 heroku[router]: at=info method=GET path=/assets/application-d76072a7ed371cf986fd5fbaa05a8ef6.css host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=5ms service=18ms status=304 bytes=0
-2014-01-09T16:31:43.950678+00:00 heroku[router]: at=info method=POST path=/ host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=36ms service=206ms status=200 bytes=5674
-2014-01-09T16:32:00.434005+00:00 app[web.1]: Started GET "/confirmation/new" for 89.186.129.13 at 2014-01-09 16:32:00 +0000
-2014-01-09T16:32:00.438644+00:00 app[web.1]: Processing by Devise::ConfirmationsController#new as HTML
-2014-01-09T16:32:00.446274+00:00 app[web.1]:   Rendered devise/shared/_links.erb (1.6ms)
-2014-01-09T16:32:00.456312+00:00 app[web.1]: Completed 200 OK in 17.5ms (Views: 16.0ms | ActiveRecord: 0.0ms)
-2014-01-09T16:32:00.446947+00:00 app[web.1]:   Rendered devise/confirmations/new.html.erb within layouts/application (5.1ms)
-2014-01-09T16:32:00.459922+00:00 heroku[router]: at=info method=GET path=/confirmation/new host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=29ms status=200 bytes=5142
-2014-01-09T16:32:00.671095+00:00 heroku[router]: at=info method=GET path=/assets/application-fa
-dff89cab133efb282501c45991b646.js host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=4ms status=304 bytes=0
-2014-01-09T16:32:01.197685+00:00 heroku[router]: at=info method=GET path=/assets/application-d76072a7ed371cf986fd5fbaa05a8ef6.css host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=3ms status=304 bytes=0
-2014-01-09T16:32:05.829005+00:00 app[web.1]: Started POST "/confirmation" for 89.186.129.13 at 2014-01-09 16:32:05 +0000
-2014-01-09T16:32:05.875234+00:00 app[web.1]: Processing by Devise::ConfirmationsController#create as HTML
-2014-01-09T16:32:05.875234+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"XdizgMGa1sxJajDdz7IyzYQTMoy+lPMXCsTKfacf+8g=", "user"=>{"email"=>"mike.feustel@it2011.ba-leipzig.de"}, "commit"=>"Resend confirmation instructions"}
-2014-01-09T16:32:06.658578+00:00 app[web.1]: Completed 500 Internal Server Error in 783.1ms
-2014-01-09T16:32:06.660181+00:00 app[web.1]: 
-2014-01-09T16:32:06.660181+00:00 app[web.1]: ArgumentError (wrong number of arguments (3 for 1)):
-2014-01-09T16:32:06.660181+00:00 app[web.1]: 
-2014-01-09T16:32:06.660181+00:00 app[web.1]: 
-2014-01-09T16:32:06.660181+00:00 app[web.1]:   app/mailers/user_mailer.rb:6:in `confirmation_instructions'
-2014-01-09T16:32:06.663585+00:00 heroku[router]: at=info method=POST path=/confirmation host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=837ms status=500 bytes=643
-2014-01-09T16:31:29.686446+00:00 heroku[router]: at=info method=GET path=/assets/application-d76072a7ed371cf986fd5fbaa05a8ef6.css host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=92ms service=34ms status=200 bytes=337618
-2014-01-09T16:37:25.423845+00:00 heroku[run.3109]: Awaiting client
-2014-01-09T16:37:25.547103+00:00 heroku[run.3109]: Starting process with command `bundle exec rake assets:clean`
-2014-01-09T16:37:25.522179+00:00 heroku[run.3109]: State changed from starting to up
-2014-01-09T16:37:32.081022+00:00 heroku[run.3109]: State changed from up to complete
-2014-01-09T16:37:31.982209+00:00 heroku[run.3109]: Process exited with status 0
-2014-01-09T16:37:48+00:00 heroku[slug-compiler]: Slug compilation started
-2014-01-09T16:38:15.332555+00:00 heroku[api]: Deploy c36f807 by mike.feustel@it2011.ba-leipzig.de
-2014-01-09T16:38:15.371414+00:00 heroku[api]: Release v11 created by mike.feustel@it2011.ba-leipzig.de
-2014-01-09T16:38:15+00:00 heroku[slug-compiler]: Slug compilation finished
-2014-01-09T16:38:15.779095+00:00 heroku[web.1]: State changed from up to starting
-2014-01-09T16:38:18.739108+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2014-01-09T16:38:19.303645+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
-2014-01-09T16:38:19.303645+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/we
-brick/server.rb:32:in `start'
-2014-01-09T16:38:19.303645+00:00 app[web.1]: [2014-01-09 16:38:19] FATAL SignalException: SIGTERM
-2014-01-09T16:38:19.303645+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
-2014-01-09T16:38:19.303645+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
-2014-01-09T16:38:19.303645+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:13:in `run'
-2014-01-09T16:38:19.303645+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/server.rb:268:in `start'
-2014-01-09T16:38:19.303645+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands/server.rb:70:in `start'
-2014-01-09T16:38:19.303645+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:55:in `block in <top (required)>'
-2014-01-09T16:38:19.303645+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:50:in `tap'
-2014-01-09T16:38:19.303885+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:50:in `<top (required)>'
-2014-01-09T16:38:19.303885+00:00 app[web.1]: 	script/rails:6:in `require'
-2014-01-09T16:38:19.303885+00:00 app[web.1]: 	script/rails:6:in `<main>'
-2014-01-09T16:38:19.303885+00:00 app[web.1]: [2014-01-09 16:38:19] INFO  going to shutdown ...
-2014-01-09T16:38:
-19.304267+00:00 app[web.1]: [2014-01-09 16:38:19] INFO  WEBrick::HTTPServer#start done.
-2014-01-09T16:38:19.304400+00:00 app[web.1]: Exiting
-2014-01-09T16:38:20.030101+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 6451`
-2014-01-09T16:38:20.573675+00:00 heroku[web.1]: Process exited with status 143
-2014-01-09T16:38:22.120274+00:00 app[web.1]: /app/config/application.rb:70:in `<class:Application>': uninitialized constant Devise::Mailer (NameError)
-2014-01-09T16:38:22.120274+00:00 app[web.1]: 	from /app/config/application.rb:19:in `<module:ContactApp>'
-2014-01-09T16:38:22.120274+00:00 app[web.1]: 	from /app/config/application.rb:18:in `<top (required)>'
-2014-01-09T16:38:22.120274+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:53:in `require'
-2014-01-09T16:38:22.120274+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:53:in `block in <top (required)>'
-2014-01-09T16:38:22.120274+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:50:in `tap'
-2014-01-09T16:38:22.120274+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:50:in `<top (required)>'
-2014-01-09T16:38:22.120274+00:00 app[web.1]: 	from script/rails:6:in `require'
-2014-01-09T16:38:22.120274+00:00 app[web.1]: 	from script/rails:6:in `<main>'
-2014-01-09T16:38:23.228443+00:00 heroku[web.1]: Process exited with status 1
-2014-01-09T16:38:23.242653+00:00 heroku[web.1]: State changed from crashed to starting
-2014-01-09T16:38:23.241825+00:00 heroku[web.1]: State changed from starting to crashed
-2014-01-09T16:38:25.553866+00:00 heroku[run.4869]: Awaiting client
-2014-01-09T16:38:25.578930+00:00 heroku[run.4869]: State changed from starting to up
-2014-01-09T16:38:25.627156+00:00 heroku[run.4869]: Starting process with command `bundle exec rake assets:precompile`
-2014-01-09T16:38:30.476300+00:00 heroku[run.4869]: Process exited with status 1
-2014-01-09T16:38:30.518340+00:00 heroku[run.4869]: State changed from up to complete
-2014-01-09T16:38:48.398617+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 49406`
-2014-01-09T16:37:13.789671+00:00 heroku[api]: Starting process with command `bundle exec rake assets:clean` by mike.feustel@it2011.ba-leipzig.de
-2014-01-09T16:38:52.152887+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:50:in `<top (required)>'
-2014-01-09T16:38:52.152887+00:00 app[web.1]: /app/config/application.rb:70:in `<class:Application>': uninitialized constant Devise::Mailer (NameError)
-2014-01-09T16:38:52.152887+00:00 app[web.1]: 	from /app/config/application.rb:19:in `<module:ContactApp>'
-2014-01-09T16:38:52.152887+00:00 app[web.1]: 	from /app/config/application.rb:18:in `<top (required)>'
-2014-01-09T16:38:52.152887+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:53:in `require'
-2014-01-09T16:38:52.152887+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:53:in `block in <top (required)>'
-2014-01-09T16:38:52.152887+00:00 app[web.1]: 	from /app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:50:in `tap'
-2014-01-09T16:38:52.152887+00:00 app[web.1]: 	from script/rails:6:in `require'
-2014-01-09T16:38:52.152887+00:00 app[web.1]: 	from script/rails:6:in `<main>'
-2014-01-09T16:38:53.537323+00:00 heroku[web.1]: Process exited with status 1
-2014-01-09T16:38:53.566434+00:00 heroku[web.1]: State changed from starting to crashed
-2014-01-09T16:39:15.472563+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/confirmation?confirmation_token=u9ND3x4sVZTeSvRGGPRG host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno= connect= service= status=503 bytes=
-2014-01-09T16:39:19.232423+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno= connect= service= status=503 bytes=
-2014-01-09T16:39:07.008741+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/confirmation?confirmation_token=u9ND3x4sVZTeSvRGGPRG host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno= connect= service= status=503 bytes=
-2014-01-09T16:39:21.714339+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/confirmation?confirmation_token=u9ND3x4sVZTeSvRGGPRG host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno= connect= service= status=503 bytes=
-2014-01-09T16:39:22.755656+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/confirmation?confirmation_token=u9ND3x4sVZTeSvRGGPRG host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno= connect= service= status=503 bytes=
-2014-01-09T16:39:23.013677+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno= connect= service= status=503 bytes=
-2014-01-09T16:39:15.703888+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno= connect= service= status=503 bytes=
-2014-01-09T16:39:32.391717+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=POST path=/confirmation host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno= connect= service= status=503 bytes=
-2014-01-09T16:39:07.587450+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path=/favicon.ico host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno= connect= service= status=503 bytes=
+2014-01-09T16:46:33.135394+00:00 heroku[router]: at=info method=GET path=/assets/favicon.ico host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=2ms service=10ms status=404 bytes=728
+2014-01-09T16:46:33.133578+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
+2014-01-09T16:46:33.133578+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/engine.rb:484:in `call'
+2014-01-09T16:46:33.133730+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+2014-01-09T16:46:33.133730+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/log_tailer.rb:17:in `call'
+2014-01-09T16:46:33.133730+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+2014-01-09T16:46:33.133730+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+2014-01-09T16:46:33.133730+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+2014-01-09T16:46:33.133730+00:00 app[web.1]: 
+2014-01-09T16:46:33.133730+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+2014-01-09T16:46:33.133730+00:00 app[web.1]: 
+2014-01-09T16:46:33.133730+00:00 app[web.1]: Served asset /favicon.ico - 404 Not Found (1ms)
+2014-01-09T16:46:33.133578+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-3.2.16/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+2014-01-09T16:46:33.133578+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+2014-01-09T16:46:33.133578+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+2014-01-09T16:46:33.133578+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/static.rb:63:in `call'
+2014-01-09T16:46:33.133578+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
+2014-01-09T16:46:33.133578+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
+2014-01-09T16:46:33.133578+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
+2014-01-09T16:46:33.133730+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/application.rb:231:in `call'
+2014-01-09T16:46:37.676939+00:00 app[web.1]: Started GET "/users/5/people" for 89.186.129.13 at 2014-01-09 16:46:37 +0000
+2014-01-09T16:46:37.679928+00:00 app[web.1]: Processing by PeopleController#index as HTML
+2014-01-09T16:46:37.679928+00:00 app[web.1]:   Parameters: {"user_id"=>"5"}
+2014-01-09T16:46:37.688584+00:00 app[web.1]:   Rendered people/index.html.erb within layouts/application (4.4ms)
+2014-01-09T16:46:37.696777+00:00 app[web.1]: Completed 200 OK in 16.6ms (Views: 13.1ms | ActiveRecord: 1.5ms)
+2014-01-09T16:46:37.993560+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/logger.rb:32:in `call_app'
+2014-01-09T16:46:37.993560+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/logger.rb:16:in `block in call'
+2014-01-09T16:46:37.993560+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-3.2.16/lib/active_support/tagged_logging.rb:22:in `tagged'
+2014-01-09T16:46:37.993560+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+2014-01-09T16:46:37.993844+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+2014-01-09T16:46:37.993844+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-3.2.16/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+2014-01-09T16:46:37.993844+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+2014-01-09T16:46:37.993844+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/static.rb:63:in `call'
+2014-01-09T16:46:37.993844+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
+2014-01-09T16:46:37.993844+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
+2014-01-09T16:46:37.993560+00:00 app[web.1]: 
+2014-01-09T16:46:37.998930+00:00 heroku[router]: at=info method=GET path=/assets/favicon.ico host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=9ms status=404 bytes=728
+2014-01-09T16:46:37.993560+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/assets/favicon.ico"):
+2014-01-09T16:46:37.993560+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+2014-01-09T16:46:37.990099+00:00 app[web.1]: Started GET "/assets/favicon.ico" for 89.186.129.13 at 2014-01-09 16:46:37 +0000
+2014-01-09T16:46:37.993560+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+2014-01-09T16:46:37.993560+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+2014-01-09T16:46:37.993844+00:00 app[web.1]:   vendor/bundle/
+ruby/2.0.0/gems/railties-3.2.16/lib/rails/engine.rb:484:in `call'
+2014-01-09T16:46:37.993560+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/logger.rb:16:in `call'
+2014-01-09T16:46:37.994105+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/application.rb:231:in `call'
+2014-01-09T16:46:37.994105+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+2014-01-09T16:46:37.994105+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/log_tailer.rb:17:in `call'
+2014-01-09T16:46:37.994105+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+2014-01-09T16:46:37.993844+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
+2014-01-09T16:46:37.993844+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
+2014-01-09T16:46:37.993844+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
+2014-01-09T16:46:37.994105+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+2014-01-09T16:46:37.994105+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+2014-01-09T16:46:37.994105+00:00 app[web.1]: 
+2014-01-09T16:46:37.994105+00:00 app[web.1]: 
+2014-01-09T16:46:37.994105+00:00 app[web.1]: Served asset /favicon.ico - 404 Not Found (1ms)
+2014-01-09T16:46:37.994105+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+2014-01-09T16:46:47.553538+00:00 app[web.1]: Started GET "/assets/favicon.ico" for 89.186.129.13 at 2014-01-09 16:46:47 +0000
+2014-01-09T16:46:47.556931+00:00 app[web.1]: 
+2014-01-09T16:46:47.556931+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+2014-01-09T16:46:47.556931+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+2014-01-09T16:46:47.556931+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/logger.rb:32:in `call_app'
+2014-01-09T16:46:47.556931+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/assets/favicon.ico"):
+2014-01-09T16:46:47.556931+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-3.2.16/lib/active_support/tagged_logging.rb:22:in `tagged'
+2014-01-09T16:46:47.556931+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/logger.rb:16:in `block in call'
+2014-01-09T16:46:47.556931+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/logger.rb:16:in `call'
+2014-01-09T16:46:47.556931+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+2014-01-09T16:46:47.556931+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+2014-01-09T16:46:47.557123+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+2014-01-09T16:46:47.557123+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
+2014-01-09T16:46:47.557123+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-3.2.16/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+2014-01-09T16:46:47.557123+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+2014-01-09T16:46:47.557123+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
+2014-01-09T16:46:47.557123+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
+2014-01-09T16:46:47.557123+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/static.rb:63:in `call'
+2014-01-09T16:46:47.557123+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
+2014-01-09T16:46:47.557123+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
+2014-01-09T16:46:47.557123+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/engine.rb:484:in `call'
+2014-01-09T16:46:47.557311+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/application.rb:231:in `call'
+2014-01-09T16:46:47.557311+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+2014-01-09T16:46:47.557311+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/log_tailer.rb:17:in `call'
+2014-01-09T16:46:47.557311+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+2014-01-09T16:46:47.557311+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+2014-01-09T16:46:47.557311+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+2014-01-09T16:46:47.557311+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+2014-01-09T16:46:47.557311+00:00 app[web.1]: 
+2014-01-09T16:46:47.557311+00:00 app[web.1]: 
+2014-01-09T16:46:47.557311+00:00 app[web.1]: Served asset /favicon.ico - 404 Not Found (1ms)
+2014-01-09T16:46:47.565704+00:00 heroku[router]: at=info method=GET path=/assets/favicon.ico host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=17ms service=14ms status=404 bytes=728
+2014-01-09T16:46:17.655543+00:00 heroku[router]: at=info method=GET path=/ host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=9ms service=59ms status=302 bytes=117
+2014-01-09T16:46:57.993361+00:00 app[web.1]: Started DELETE "/users/5/people/28" for 89.186.129.13 at 2014-01-09 16:46:57 +0000
+2014-01-09T16:46:57.998745+00:00 app[web.1]: Processing by PeopleController#destroy as HTML
+2014-01-09T16:46:57.998745+00:00 app[web.1]:   Parameters: {"authenticity_token"=>"wSkeAP1S64rui3F0tqJLfQZEt6ornbQvEs4K3dEP9Ic=", "user_id"=>"5", "id"=>"28"}
+2014-01-09T16:46:58.006737+00:00 app[web.1]: Completed 500 Internal Server Error in 7.8ms
+2014-01-09T16:46:58.010236+00:00 app[web.1]: NoMethodError (undefined method `find_vy_id' for #<Class:0x007f21be67d4f0>):
+2014-01-09T16:46:58.010236+00:00 app[web.1]: 
+2014-01-09T16:46:58.010236+00:00 app[web.1]: 
+2014-01-09T16:46:58.010236+00:00 app[web.1]:   app/controllers/people_controller.rb:118:in `destroy'
+2014-01-09T16:46:58.010236+00:00 app[web.1]: 
+2014-01-09T16:46:58.032560+00:00 heroku[router]: at=info method=POST path=/users/5/people/28 host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=50ms service=44ms status=500 bytes=643
+2014-01-09T16:46:23.388492+00:00 heroku[router]: at=info method=GET path=/users/5/people/new host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=5ms service=150ms status=200 bytes=9519

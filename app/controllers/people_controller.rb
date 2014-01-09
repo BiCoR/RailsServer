@@ -115,7 +115,7 @@ class PeopleController < ApplicationController
   # DELETE /people/1
   # DELETE /people/1.json
   def destroy
-    @person = Person.find_vy_id(params[:id])
+    @person = Person.find_by_id(params[:id])
     redirect_to_default unless @person && @person.user == current_user
     @person.destroy
 
