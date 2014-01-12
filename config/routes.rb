@@ -1,6 +1,8 @@
 ContactApp::Application.routes.draw do
 
-  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}
+  #devise_for :users, :controllers => {:sessions => 'sessions'}
+  devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}, :controllers => {:sessions => 'sessions'}
+
   #devise_for :users, :skip => [:sessions]
   #as :user do
   #  get 'signin' => 'devise/sessions#new', :as => :new_user_session
@@ -13,6 +15,8 @@ ContactApp::Application.routes.draw do
   #match '/signout' => 'devise/sessions#destroy', :as => :destroy_user_session,
   #      :via => Devise.mappings[:user].sign_out_via
   #resources :users
+
+
 
   devise_scope :user do
     match 'login' => 'devise/sessions#new',  :as => :new_user_session
