@@ -528,3 +528,104 @@ DrÅcken Sie eine beliebige Taste . . .
 2014-01-14T20:58:04.819028+00:00 heroku[router]: at=info method=GET path=/login host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=7ms service=1086ms status=200 bytes=5630
 2014-01-14T20:57:53.274817+00:00 heroku[router]: at=info method=GET path=/assets/application-d76072a7ed371cf986fd5fbaa05a8ef6.css host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=55ms status=200 bytes=337618
 2014-01-14T20:58:13.765370+00:00 heroku[router]: at=info method=GET path=/ host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=90ms status=200 bytes=10290
+2014-01-28T08:21:56.693849+00:00 app[web.1]: Completed 401 Unauthorized in 0.9ms
+2014-01-28T08:21:56.695017+00:00 app[web.1]: [deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+2014-01-28T08:21:56.692806+00:00 app[web.1]: Processing by UsersController#index as */*
+2014-01-28T08:21:56.824410+00:00 app[web.1]: Started GET "/login" for 195.37.187.115 at 2014-01-28 08:21:56 +0000
+2014-01-28T08:21:56.828492+00:00 app[web.1]: Processing by SessionsController#new as */*
+2014-01-28T08:21:56.969081+00:00 app[web.1]:   Rendered devise/shared/_links.erb (2.5ms)
+2014-01-28T08:21:56.969081+00:00 app[web.1]:   Rendered devise/sessions/new.html.erb within layouts/application (48.0ms)
+2014-01-28T08:21:56.980989+00:00 app[web.1]: Completed 200 OK in 152.3ms (Views: 67.2ms | ActiveRecord: 46.3ms)
+2014-01-28T08:21:56.985449+00:00 heroku[router]: at=info method=GET path=/login host=quiet-crag-9089.herokuapp.com request_id=68b6df0c-a1eb-45f3-8bfd-1224b9135425 fwd="195.37.187.115" dyno=web.1 connect=2ms service=167ms status=200 bytes=5630
+2014-01-28T08:21:57.383327+00:00 app[web.1]: Started GET "/login" for 195.37.187.115 at 2014-01-28 08:21:57 +0000
+2014-01-28T08:21:57.386756+00:00 app[web.1]: Processing by SessionsController#new as HTML
+2014-01-28T08:21:57.392284+00:00 app[web.1]:   Rendered devise/shared/_links.erb (0.8ms)
+2014-01-28T08:21:57.392284+00:00 app[web.1]:   Rendered devise/sessions/new.html.erb within layouts/application (3.7ms)
+2014-01-28T08:21:57.401174+00:00 app[web.1]: Completed 200 OK in 14.3ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+2014-01-28T08:21:57.405918+00:00 heroku[router]: at=info method=GET path=/login host=quiet-crag-9089.herokuapp.com request_id=b1088223-4806-420b-8127-c1e513c370a5 fwd="195.37.187.115" dyno=web.1 connect=4ms service=26ms status=200 bytes=5477
+2014-01-28T08:21:57.654477+00:00 heroku[router]: at=info method=GET path=/assets/application-d76072a7ed371cf986fd5fbaa05a8ef6.css host=quiet-crag-9089.herokuapp.com request_id=4d70e1bd-c9e3-4636-83b9-f46a70a050d9 fwd="195.37.187.115" dyno=web.1 connect=4ms service=24ms status=200 bytes=337618
+2014-01-28T08:21:57.731072+00:00 app[web.1]: Started GET "/assets/favicon.ico" for 195.37.187.115 at 2014-01-28 08:21:57 +0000
+2014-01-28T08:21:57.737847+00:00 app[web.1]: 
+2014-01-28T08:21:57.737847+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+2014-01-28T08:21:57.737847+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-3.2.16/lib/active_support/tagged_logging.rb:22:in `tagged'
+2014-01-28T08:21:57.737847+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/assets/favicon.ico"):
+2014-01-28T08:21:57.737847+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+2014-01-28T08:21:57.737847+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/logger.rb:16:in `call'
+2014-01-28T08:21:57.737847+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+2014-01-28T08:21:57.737847+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/logger.rb:16:in `block in call'
+2014-01-28T08:21:57.737847+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/logger.rb:32:in `call_app'
+2014-01-28T08:21:57.738040+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
+2014-01-28T08:21:57.738040+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
+2014-01-28T08:21:57.738040+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+2014-01-28T08:21:57.738040+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
+2014-01-28T08:21:57.738040+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
+2014-01-28T08:21:57.738040+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-3.2.16/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+2014-01-28T08:21:57.738040+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/engine.rb:484:in `call'
+2014-01-28T08:21:57.738212+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+2014-01-28T08:21:57.737847+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+2014-01-28T08:21:57.738040+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
+2014-01-28T08:21:57.738212+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+2014-01-28T08:21:57.738040+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+2014-01-28T08:21:57.738212+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/log_tailer.rb:17:in `call'
+2014-01-28T08:21:57.738212+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/application.rb:231:in `call'
+2014-01-28T08:21:57.738212+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+2014-01-28T08:21:57.738040+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/static.rb:63:in `call'
+2014-01-28T08:21:57.738212+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+2014-01-28T08:21:57.738212+00:00 app[web.1]: 
+2014-01-28T08:21:57.738212+00:00 app[web.1]: 
+2014-01-28T08:21:57.739857+00:00 heroku[router]: at=info method=GET path=/assets/application-fadff89cab133efb282501c45991b646.js host=quiet-crag-9089.herokuapp.com request_id=b08ac8ca-9370-4cac-8535-fe82ab8de5e6 fwd="195.37.187.115" dyno=web.1 connect=2ms service=17ms status=200 bytes=140516
+2014-01-28T08:21:57.738212+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+2014-01-28T08:21:57.738212+00:00 app[web.1]: Served asset /favicon.ico - 404 Not Found (1ms)
+2014-01-28T08:21:57.746308+00:00 heroku[router]: at=info method=GET path=/assets/favicon.ico host=quiet-crag-9089.herokuapp.com request_id=5daaeffa-c5cb-4e2a-97dc-a61077f6bf98 fwd="195.37.187.115" dyno=web.1 connect=2ms service=13ms status=404 bytes=728
+2014-01-28T08:21:57.886386+00:00 app[web.1]: Started GET "/assets/favicon.ico" for 195.37.187.115 at 2014-01-28 08:21:57 +0000
+2014-01-28T08:21:57.890813+00:00 app[web.1]: 
+2014-01-28T08:21:57.890813+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/assets/favicon.ico"):
+2014-01-28T08:21:57.890813+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/logger.rb:16:in `block in call'
+2014-01-28T08:21:57.890813+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+2014-01-28T08:21:57.890813+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/logger.rb:32:in `call_app'
+2014-01-28T08:21:57.890813+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+2014-01-28T08:21:57.890813+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-3.2.16/lib/active_support/tagged_logging.rb:22:in `tagged'
+2014-01-28T08:21:57.890813+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/logger.rb:16:in `call'
+2014-01-28T08:21:57.891026+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+2014-01-28T08:21:57.891026+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+2014-01-28T08:21:57.891026+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/static.rb:63:in `call'
+2014-01-28T08:21:57.891026+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
+2014-01-28T08:21:57.890813+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+2014-01-28T08:21:57.891026+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-3.2.16/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+2014-01-28T08:21:57.890813+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+2014-01-28T08:21:57.891026+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
+2014-01-28T08:21:57.891026+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/engine.rb:484:in `call'
+2014-01-28T08:21:57.891026+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
+2014-01-28T08:21:57.891217+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+2014-01-28T08:21:57.891217+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/log_tailer.rb:17:in `call'
+2014-01-28T08:21:57.891217+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+2014-01-28T08:21:57.891026+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
+2014-01-28T08:21:57.891217+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+2014-01-28T08:21:57.891217+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/application.rb:231:in `call'
+2014-01-28T08:21:57.891026+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
+2014-01-28T08:21:57.898057+00:00 heroku[router]: at=info method=GET path=/assets/favicon.ico host=quiet-crag-9089.herokuapp.com request_id=e60bbf96-f1ef-47cb-8dc0-3fc69d808bdf fwd="195.37.187.115" dyno=web.1 connect=1ms service=14ms status=404 bytes=728
+2014-01-28T08:21:57.891217+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+2014-01-28T08:21:57.891217+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+2014-01-28T08:21:57.891217+00:00 app[web.1]: 
+2014-01-28T08:21:57.894764+00:00 app[web.1]: Served asset /favicon.ico - 404 Not Found (1ms)
+2014-01-28T08:21:57.891217+00:00 app[web.1]: 
+2014-01-28T09:25:37.381323+00:00 heroku[web.1]: Idling
+2014-01-28T09:25:37.382257+00:00 heroku[web.1]: State changed from up to down
+2014-01-28T09:25:40.564300+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-01-28T09:25:41.205070+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+2014-01-28T09:25:41.205070+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:13:in `run'
+2014-01-28T09:25:41.205070+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+2014-01-28T09:25:41.205070+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+2014-01-28T09:25:41.205070+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/server.rb:268:in `start'
+2014-01-28T09:25:41.205070+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands/server.rb:70:in `start'
+2014-01-28T09:25:41.205070+00:00 app[web.1]: [2014-01-28 09:25:41] FATAL SignalException: SIGTERM
+2014-01-28T09:25:41.205332+00:00 app[web.1]: 	script/rails:6:in `require'
+2014-01-28T09:25:41.205070+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+2014-01-28T09:25:41.205070+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:55:in `block in <top (required)>'
+2014-01-28T09:25:41.205070+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:50:in `tap'
+2014-01-28T09:25:41.205332+00:00 app[web.1]: 	script/rails:6:in `<main>'
+2014-01-28T09:25:41.205332+00:00 app[web.1]: [2014-01-28 09:25:41] INFO  going to shutdown ...
+2014-01-28T09:25:41.205332+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:50:in `<top (required)>'
+2014-01-28T09:25:41.205332+00:00 app[web.1]: [2014-01-28 09:25:41] INFO  WEBrick::HTTPServer#start done.
+2014-01-28T09:25:41.205332+00:00 app[web.1]: Exiting
+2014-01-28T09:25:43.589509+00:00 heroku[web.1]: Process exited with status 143
