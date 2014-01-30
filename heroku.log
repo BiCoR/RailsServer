@@ -302,3 +302,229 @@
 2014-01-14T10:14:43.877756+00:00 app[web.1]: 	script/rails:6:in `require'
 2014-01-14T10:14:43.877756+00:00 app[web.1]: 	script/rails:6:in `<main>'
 2014-01-14T10:14:45.565002+00:00 heroku[web.1]: Process exited with status 143
+2014-01-14T08:31:53.266453+00:00 app[web.1]: Processing by UsersController#index as HTML
+2014-01-14T08:31:53.273114+00:00 app[web.1]: Redirected to http://quiet-crag-9089.herokuapp.com/users/6/people
+2014-01-14T08:31:53.273640+00:00 app[web.1]: Completed 302 Found in 6.9ms (ActiveRecord: 2.4ms)
+2014-01-14T08:31:53.273393+00:00 app[web.1]: Filter chain halted as :check_admin_only rendered or redirected
+2014-01-14T08:31:53.407980+00:00 app[web.1]:   Parameters: {"user_id"=>"6"}
+2014-01-14T08:31:53.420792+00:00 app[web.1]:   Rendered people/index.html.erb within layouts/application (6.0ms)
+2014-01-14T08:31:53.407980+00:00 app[web.1]: Processing by PeopleController#index as HTML
+2014-01-14T08:31:53.402014+00:00 app[web.1]: Started GET "/users/6/people" for 195.37.187.27 at 2014-01-14 08:31:53 +0000
+2014-01-14T08:31:53.429920+00:00 app[web.1]: Completed 200 OK in 21.8ms (Views: 15.4ms | ActiveRecord: 4.5ms)
+2014-01-14T08:31:53.431830+00:00 heroku[router]: at=info method=GET path=/users/6/people host=quiet-crag-9089.herokuapp.com fwd="195.37.187.27" dyno=web.1 connect=2ms service=44ms status=304 bytes=0
+2014-01-14T08:32:15.519642+00:00 app[web.1]: Started GET "/users/6/people" for 195.37.187.27 at 2014-01-14 08:32:15 +0000
+2014-01-14T08:32:15.526164+00:00 app[web.1]: Processing by PeopleController#index as HTML
+2014-01-14T08:32:15.526164+00:00 app[web.1]:   Parameters: {"user_id"=>"6"}
+2014-01-14T08:32:15.540323+00:00 app[web.1]:   Rendered people/index.html.erb within layouts/application (4.7ms)
+2014-01-14T08:32:15.552823+00:00 app[web.1]: Completed 200 OK in 26.5ms (Views: 18.0ms | ActiveRecord: 4.6ms)
+2014-01-14T08:32:15.556226+00:00 heroku[router]: at=info method=GET path=/users/6/people host=quiet-crag-9089.herokuapp.com fwd="195.37.187.27" dyno=web.1 connect=2ms service=41ms status=304 bytes=0
+2014-01-14T08:32:16.426539+00:00 app[web.1]: Started GET "/users/6/people" for 195.37.187.27 at 2014-01-14 08:32:16 +0000
+2014-01-14T08:32:16.429896+00:00 app[web.1]: Processing by PeopleController#index as HTML
+2014-01-14T08:32:16.429896+00:00 app[web.1]:   Parameters: {"user_id"=>"6"}
+2014-01-14T08:32:16.444010+00:00 heroku[router]: at=info method=GET path=/users/6/people host=quiet-crag-9089.herokuapp.com fwd="195.37.187.27" dyno=web.1 connect=5ms service=30ms status=304 bytes=0
+2014-01-14T08:32:16.449583+00:00 app[web.1]: Completed 200 OK in 19.5ms (Views: 12.2ms | ActiveRecord: 4.4ms)
+2014-01-14T08:32:16.441163+00:00 app[web.1]:   Rendered people/index.html.erb within layouts/application (3.6ms)
+2014-01-14T08:32:17.724376+00:00 app[web.1]: Started GET "/" for 195.37.187.27 at 2014-01-14 08:32:17 +0000
+2014-01-14T08:32:17.732363+00:00 app[web.1]: Processing by UsersController#index as HTML
+2014-01-14T08:32:17.736955+00:00 app[web.1]: Redirected to http://quiet-crag-9089.herokuapp.com/users/6/people
+2014-01-14T08:32:17.739094+00:00 app[web.1]: Filter chain halted as :check_admin_only rendered or redirected
+2014-01-14T08:32:17.739287+00:00 app[web.1]: Completed 302 Found in 6.8ms (ActiveRecord: 2.6ms)
+2014-01-14T08:32:17.873592+00:00 app[web.1]: Started GET "/users/6/people" for 195.37.187.27 at 2014-01-14 08:32:17 +0000
+2014-01-14T08:32:17.878603+00:00 app[web.1]: Processing by PeopleController#index as HTML
+2014-01-14T08:32:17.890998+00:00 app[web.1]:   Parameters: {"user_id"=>"6"}
+2014-01-14T08:32:17.918267+00:00 app[web.1]:   Rendered people/index.html.erb within layouts/application (3.9ms)
+2014-01-14T08:32:17.927903+00:00 app[web.1]: Completed 200 OK in 36.7ms (Views: 14.1ms | ActiveRecord: 10.5ms)
+2014-01-14T08:32:17.929759+00:00 heroku[router]: at=info method=GET path=/users/6/people host=quiet-crag-9089.herokuapp.com fwd="195.37.187.27" dyno=web.1 connect=2ms service=74ms status=304 bytes=0
+2014-01-14T08:32:17.744270+00:00 heroku[router]: at=info method=GET path=/ host=quiet-crag-9089.herokuapp.com fwd="195.37.187.27" dyno=web.1 connect=2ms service=27ms status=302 bytes=117
+2014-01-14T08:34:44.247621+00:00 app[web.1]: Started GET "/signin" for 195.37.187.27 at 2014-01-14 08:34:44 +0000
+2014-01-14T08:34:44.251212+00:00 app[web.1]: Processing by Devise::SessionsController#create as HTML
+2014-01-14T08:34:44.255093+00:00 app[web.1]: Redirected to http://quiet-crag-9089.herokuapp.com/
+2014-01-14T08:34:44.255161+00:00 app[web.1]: Filter chain halted as :require_no_authentication rendered or redirected
+2014-01-14T08:34:44.255297+00:00 app[web.1]: Completed 302 Found in 4.0ms (ActiveRecord: 2.4ms)
+2014-01-14T08:34:44.373708+00:00 app[web.1]: Started GET "/" for 195.37.187.27 at 2014-01-14 08:34:44 +0000
+2014-01-14T08:34:44.377571+00:00 app[web.1]: Processing by UsersController#index as HTML
+2014-01-14T08:34:44.381554+00:00 app[web.1]: Redirected to http://quiet-crag-9089.herokuapp.com/users/6/people
+2014-01-14T08:34:44.381554+00:00 app[web.1]: Filter chain halted as :check_admin_only rendered or redirected
+2014-01-14T08:34:44.381742+00:00 app[web.1]: Completed 302 Found in 4.1ms (ActiveRecord: 2.4ms)
+2014-01-14T08:34:44.387338+00:00 heroku[router]: at=info method=GET path=/ host=quiet-crag-9089.herokuapp.com fwd="195.37.187.27" dyno=web.1 connect=1ms service=21ms status=302 bytes=117
+2014-01-14T08:34:44.513543+00:00 app[web.1]: Started GET "/users/6/people" for 195.37.187.27 at 2014-01-14 08:34:44 +0000
+2014-01-14T08:34:44.518012+00:00 app[web.1]: Processing by PeopleController#index as HTML
+2014-01-14T08:34:44.518012+00:00 app[web.1]:   Parameters: {"user_id"=>"6"}
+2014-01-14T08:34:44.529582+00:00 app[web.1]:   Rendered people/index.html.erb within layouts/application (4.5ms)
+2014-01-14T08:34:44.537163+00:00 app[web.1]: Completed 200 OK in 19.0ms (Views: 12.4ms | ActiveRecord: 4.4ms)
+2014-01-14T08:34:44.539106+00:00 heroku[router]: at=info method=GET path=/users/6/people host=quiet-crag-9089.herokuapp.com fwd="195.37.187.27" dyno=web.1 connect=1ms service=29ms status=200 bytes=6072
+2014-01-14T08:35:34.607790+00:00 app[web.1]: Filter chain halted as :require_no_authentication rendered or redirected
+2014-01-14T08:35:34.595468+00:00 app[web.1]: Started GET "/signin" for 195.37.187.27 at 2014-01-14 08:35:34 +0000
+2014-01-14T08:35:34.602110+00:00 app[web.1]: Processing by Devise::SessionsController#create as HTML
+2014-01-14T08:35:34.607790+00:00 app[web.1]: Redirected to http://quiet-crag-9089.herokuapp.com/
+2014-01-14T08:35:34.607790+00:00 app[web.1]: Completed 302 Found in 5.2ms (ActiveRecord: 2.7ms)
+2014-01-14T08:35:34.599019+00:00 heroku[router]: at=info method=GET path=/signin host=quiet-crag-9089.herokuapp.com fwd="195.37.187.27" dyno=web.1 connect=5ms service=24ms status=302 bytes=103
+2014-01-14T08:35:34.750621+00:00 app[web.1]: Started GET "/" for 195.37.187.27 at 2014-01-14 08:35:34 +0000
+2014-01-14T08:35:34.754365+00:00 app[web.1]: Processing by UsersController#index as HTML
+2014-01-14T08:35:34.757441+00:00 heroku[router]: at=info method=GET path=/ host=quiet-crag-9089.herokuapp.com fwd="195.37.187.27" dyno=web.1 connect=1ms service=17ms status=302 bytes=117
+2014-01-14T08:35:34.758505+00:00 app[web.1]: Redirected to http://quiet-crag-9089.herokuapp.com/users/6/people
+2014-01-14T08:35:34.758505+00:00 app[web.1]: Filter chain halted as :check_admin_only rendered or redirected
+2014-01-14T08:35:34.758886+00:00 app[web.1]: Completed 302 Found in 4.4ms (ActiveRecord: 2.4ms)
+2014-01-14T08:35:34.875370+00:00 app[web.1]: Started GET "/users/6/people" for 195.37.187.27 at 2014-01-14 08:35:34 +0000
+2014-01-14T08:35:34.878988+00:00 app[web.1]: Processing by PeopleController#index as HTML
+2014-01-14T08:35:34.878988+00:00 app[web.1]:   Parameters: {"user_id"=>"6"}
+2014-01-14T08:35:34.898202+00:00 app[web.1]:   Rendered people/index.html.erb within layouts/application (11.0ms)
+2014-01-14T08:35:34.913147+00:00 app[web.1]: Completed 200 OK in 34.0ms (Views: 26.3ms | ActiveRecord: 5.4ms)
+2014-01-14T08:34:44.255865+00:00 heroku[router]: at=info method=GET path=/signin host=quiet-crag-9089.herokuapp.com fwd="195.37.187.27" dyno=web.1 connect=1ms service=13ms status=302 bytes=103
+2014-01-14T09:12:11.229450+00:00 heroku[router]: at=info method=GET path=/users/6/people host=quiet-crag-9089.herokuapp.com fwd="195.37.187.27" dyno=web.1 connect=2ms service=21ms status=302 bytes=108
+2014-01-14T09:12:11.225255+00:00 app[web.1]: Started GET "/users/6/people" for 195.37.187.27 at 2014-01-14 09:12:11 +0000
+2014-01-14T09:12:11.228566+00:00 app[web.1]: Processing by PeopleController#index as HTML
+2014-01-14T09:12:11.228867+00:00 app[web.1]:   Parameters: {"user_id"=>"6"}
+2014-01-14T09:12:11.229592+00:00 app[web.1]: Completed 401 Unauthorized in 0.5ms
+2014-01-14T09:12:11.452285+00:00 app[web.1]: Started GET "/login" for 195.37.187.27 at 2014-01-14 09:12:11 +0000
+2014-01-14T09:12:11.457701+00:00 app[web.1]: Processing by SessionsController#new as HTML
+2014-01-14T09:12:11.469372+00:00 app[web.1]:   Rendered devise/sessions/new.html.erb within layouts/application (9.2ms)
+2014-01-14T09:12:11.469372+00:00 app[web.1]:   Rendered devise/shared/_links.erb (5.7ms)
+2014-01-14T09:12:11.480235+00:00 app[web.1]: Completed 200 OK in 22.4ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+2014-01-14T09:12:11.677802+00:00 heroku[router]: at=info method=GET path=/assets/application-fadff89cab133efb282501c45991b646.js host=quiet-crag-9089.herokuapp.com fwd="195.37.187.27" dyno=web.1 connect=2ms service=23ms status=200 bytes=140516
+2014-01-14T09:12:11.484077+00:00 heroku[router]: at=info method=GET path=/login host=quiet-crag-9089.herokuapp.com fwd="195.37.187.27" dyno=web.1 connect=2ms service=39ms status=200 bytes=5630
+2014-01-14T10:14:37.692709+00:00 heroku[web.1]: Idling
+2014-01-14T10:14:37.694627+00:00 heroku[web.1]: State changed from up to down
+2014-01-14T10:14:42.980512+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-01-14T10:14:43.877558+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+2014-01-14T10:14:43.877558+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+2014-01-14T10:14:43.877558+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+2014-01-14T10:14:43.877558+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+2014-01-14T10:14:43.877558+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:13:in `run'
+2014-01-14T10:14:43.877558+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/server.rb:268:in `start'
+2014-01-14T10:14:43.877558+00:00 app[web.1]: [2014-01-14 10:14:43] FATAL SignalException: SIGTERM
+2014-01-14T10:14:43.877558+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands/server.rb:70:in `start'
+2014-01-14T10:14:43.877558+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:55:in `block in <top (required)>'
+2014-01-14T10:14:43.877558+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:50:in `tap'
+2014-01-14T10:14:43.878051+00:00 app[web.1]: [2014-01-14 10:14:43] INFO  going to shutdown ...
+2014-01-14T10:14:43.878261+00:00 app[web.1]: [2014-01-14 10:14:43] INFO  WEBrick::HTTPServer#start done.
+2014-01-14T10:14:43.878396+00:00 app[web.1]: Exiting
+2014-01-14T10:14:43.877756+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/commands.rb:50:in `<top (required)>'
+2014-01-14T10:14:43.877756+00:00 app[web.1]: 	script/rails:6:in `require'
+2014-01-14T10:14:43.877756+00:00 app[web.1]: 	script/rails:6:in `<main>'
+2014-01-14T10:14:45.565002+00:00 heroku[web.1]: Process exited with status 143
+
+C:\Users\M\RubymineProjects\ContactApp>call heroku run rake assets:clean 
+Running `rake assets:clean` attached to terminal... up, run.5374
+DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/Rakefile:7)
+DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/Rakefile:7)
+/app/vendor/ruby-2.0.0/bin/ruby /app/vendor/bundle/ruby/2.0.0/bin/rake assets:clean:all RAILS_ENV=production RAILS_GROUPS=assets
+DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/Rakefile:7)
+DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/Rakefile:7)
+rm -rf /app/public/assets
+
+C:\Users\M\RubymineProjects\ContactApp>git push heroku master 1>push.log 
+
+C:\Users\M\RubymineProjects\ContactApp>call heroku run rake assets:precompile 
+Running `rake assets:precompile` attached to terminal... up, run.1142
+DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/Rakefile:7)
+DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/Rakefile:7)
+/app/vendor/ruby-2.0.0/bin/ruby /app/vendor/bundle/ruby/2.0.0/bin/rake assets:precompile:all RAILS_ENV=production RAILS_GROUPS=assets
+DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/Rakefile:7)
+DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/Rakefile:7)
+DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/Rakefile:7)
+DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/Rakefile:7)
+
+C:\Users\M\RubymineProjects\ContactApp>pause
+DrÅcken Sie eine beliebige Taste . . . 
+2014-01-14T10:14:43.877756+00:00 app[web.1]: 	script/rails:6:in `<main>'
+2014-01-14T10:14:45.565002+00:00 heroku[web.1]: Process exited with status 143
+2014-01-14T20:41:48.073309+00:00 heroku[api]: Starting process with command `bundle exec rake assets:clean` by mike.feustel@it2011.ba-leipzig.de
+2014-01-14T20:41:53.982881+00:00 heroku[run.5374]: Awaiting client
+2014-01-14T20:41:54.024369+00:00 heroku[run.5374]: Starting process with command `bundle exec rake assets:clean`
+2014-01-14T20:41:54.005355+00:00 heroku[run.5374]: State changed from starting to up
+2014-01-14T20:42:01.973834+00:00 heroku[run.5374]: Process exited with status 0
+2014-01-14T20:42:01.989859+00:00 heroku[run.5374]: State changed from up to complete
+2014-01-14T20:42:07+00:00 heroku[slug-compiler]: Slug compilation started
+2014-01-14T20:42:32+00:00 heroku[slug-compiler]: Slug compilation finished
+2014-01-14T20:42:32.301340+00:00 heroku[web.1]: State changed from down to starting
+2014-01-14T20:42:36.278430+00:00 heroku[api]: Starting process with command `bundle exec rake assets:precompile` by mike.feustel@it2011.ba-leipzig.de
+2014-01-14T20:42:38.050787+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 43038`
+2014-01-14T20:42:41.435130+00:00 heroku[run.1142]: State changed from starting to up
+2014-01-14T20:42:41.736370+00:00 heroku[run.1142]: Awaiting client
+2014-01-14T20:42:41.780644+00:00 heroku[run.1142]: Starting process with command `bundle exec rake assets:precompile`
+2014-01-14T20:42:43.880427+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2014-01-14T20:42:43.880832+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2014-01-14T20:42:44.409765+00:00 app[web.1]: => Booting WEBrick
+2014-01-14T20:42:44.409765+00:00 app[web.1]: => Call with -d to detach
+2014-01-14T20:42:44.409765+00:00 app[web.1]: => Rails 3.2.16 application starting in production on http://0.0.0.0:43038
+2014-01-14T20:42:44.409765+00:00 app[web.1]: Connecting to database specified by DATABASE_URL
+2014-01-14T20:42:44.409765+00:00 app[web.1]: => Ctrl-C to shutdown server
+2014-01-14T20:42:45.504011+00:00 app[web.1]: [2014-01-14 20:42:45] INFO  WEBrick 1.3.1
+2014-01-14T20:42:45.504011+00:00 app[web.1]: [2014-01-14 20:42:45] INFO  ruby 2.0.0 (2013-11-22) [x86_64-linux]
+2014-01-14T20:42:45.504450+00:00 app[web.1]: [2014-01-14 20:42:45] INFO  WEBrick::HTTPServer#start: pid=2 port=43038
+2014-01-14T20:42:45.816292+00:00 heroku[web.1]: State changed from starting to up
+2014-01-14T20:43:32.901275+00:00 heroku[run.1142]: Process exited with status 0
+2014-01-14T20:43:32.916683+00:00 heroku[run.1142]: State changed from up to complete
+2014-01-14T20:57:51.649099+00:00 app[web.1]: Started GET "/" for 89.186.129.13 at 2014-01-14 20:57:51 +0000
+2014-01-14T20:57:52.219762+00:00 app[web.1]: Processing by UsersController#index as HTML
+2014-01-14T20:57:52.550589+00:00 app[web.1]: Redirected to http://quiet-crag-9089.herokuapp.com/users/13/people
+2014-01-14T20:57:52.550640+00:00 app[web.1]: Filter chain halted as :check_admin_only rendered or redirected
+2014-01-14T20:57:52.550844+00:00 app[web.1]: Completed 302 Found in 331.0ms (ActiveRecord: 107.5ms)
+2014-01-14T20:57:52.690435+00:00 app[web.1]: Started GET "/users/13/people" for 89.186.129.13 at 2014-01-14 20:57:52 +0000
+2014-01-14T20:57:52.697260+00:00 app[web.1]: Processing by PeopleController#index as HTML
+2014-01-14T20:57:52.697581+00:00 app[web.1]:   Parameters: {"user_id"=>"13"}
+2014-01-14T20:57:52.797291+00:00 app[web.1]: [deprecated] I18n.enforce_available_locales will default to true in the future. If you really want to skip validation of your locale you can set I18n.enforce_available_locales = false to avoid this message.
+2014-01-14T20:57:52.808347+00:00 app[web.1]:   Rendered people/index.html.erb within layouts/application (17.3ms)
+2014-01-14T20:57:52.834664+00:00 app[web.1]: Completed 200 OK in 136.6ms (Views: 119.6ms | ActiveRecord: 13.0ms)
+2014-01-14T20:57:53.409358+00:00 heroku[router]: at=info method=GET path=/assets/application-fadff89cab133efb282501c45991b646.js host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=59ms status=200 bytes=140516
+2014-01-14T20:57:56.672844+00:00 heroku[router]: at=info method=GET path=/assets/fontawesome-webfont-b4d67f1e5651506c3e80d842ee67d6ba.woff host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=14ms status=200 bytes=43572
+2014-01-14T20:57:57.079236+00:00 app[web.1]: Started GET "/assets/favicon.ico" for 89.186.129.13 at 2014-01-14 20:57:57 +0000
+2014-01-14T20:57:57.092087+00:00 app[web.1]: 
+2014-01-14T20:57:57.092087+00:00 app[web.1]: ActionController::RoutingError (No route matches [GET] "/assets/favicon.ico"):
+2014-01-14T20:57:57.092087+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+2014-01-14T20:57:57.092087+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+2014-01-14T20:57:57.092087+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/logger.rb:32:in `call_app'
+2014-01-14T20:57:57.092087+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+2014-01-14T20:57:57.092260+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+2014-01-14T20:57:57.092087+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-3.2.16/lib/active_support/tagged_logging.rb:22:in `tagged'
+2014-01-14T20:57:57.092260+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
+2014-01-14T20:57:57.092087+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/logger.rb:16:in `call'
+2014-01-14T20:57:57.092260+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
+2014-01-14T20:57:57.092260+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+2014-01-14T20:57:57.092087+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+2014-01-14T20:57:57.092260+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
+2014-01-14T20:57:57.092260+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
+2014-01-14T20:57:57.092260+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/activesupport-3.2.16/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+2014-01-14T20:57:57.092087+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/logger.rb:16:in `block in call'
+2014-01-14T20:57:57.092260+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
+2014-01-14T20:57:57.092426+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/application.rb:231:in `call'
+2014-01-14T20:57:57.092426+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/rack/log_tailer.rb:17:in `call'
+2014-01-14T20:57:57.092426+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+2014-01-14T20:57:57.092426+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+2014-01-14T20:57:57.092260+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/railties-3.2.16/lib/rails/engine.rb:484:in `call'
+2014-01-14T20:57:57.093409+00:00 app[web.1]: Served asset /favicon.ico - 404 Not Found (1ms)
+2014-01-14T20:57:57.092426+00:00 app[web.1]:   vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+2014-01-14T20:57:57.092426+00:00 app[web.1]: 
+2014-01-14T20:57:57.092426+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+2014-01-14T20:57:57.092426+00:00 app[web.1]: 
+2014-01-14T20:57:57.092260+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/actionpack-3.2.16/lib/action_dispatch/middleware/static.rb:63:in `call'
+2014-01-14T20:57:57.092426+00:00 app[web.1]:   vendor/bundle/ruby/2.0.0/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+2014-01-14T20:58:02.664126+00:00 app[web.1]: Processing by Devise::SessionsController#destroy as HTML
+2014-01-14T20:58:02.681231+00:00 app[web.1]: Redirected to http://quiet-crag-9089.herokuapp.com/
+2014-01-14T20:58:02.682688+00:00 app[web.1]: Completed 302 Found in 18.2ms (ActiveRecord: 9.0ms)
+2014-01-14T20:58:02.654646+00:00 app[web.1]: Started GET "/signout" for 89.186.129.13 at 2014-01-14 20:58:02 +0000
+2014-01-14T20:58:03.248337+00:00 app[web.1]: Started GET "/" for 89.186.129.13 at 2014-01-14 20:58:03 +0000
+2014-01-14T20:58:03.504572+00:00 app[web.1]: Processing by UsersController#index as HTML
+2014-01-14T20:58:03.528879+00:00 app[web.1]: Completed 401 Unauthorized in 4.2ms
+2014-01-14T20:58:03.603839+00:00 heroku[router]: at=info method=GET path=/ host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=785ms status=302 bytes=108
+2014-01-14T20:58:03.815195+00:00 app[web.1]: Started GET "/login" for 89.186.129.13 at 2014-01-14 20:58:03 +0000
+2014-01-14T20:58:03.914940+00:00 app[web.1]: Processing by SessionsController#new as HTML
+2014-01-14T20:58:04.189722+00:00 app[web.1]:   Rendered devise/sessions/new.html.erb within layouts/application (258.4ms)
+2014-01-14T20:58:04.189722+00:00 app[web.1]:   Rendered devise/shared/_links.erb (69.1ms)
+2014-01-14T20:58:04.810924+00:00 app[web.1]: Completed 200 OK in 890.2ms (Views: 887.1ms | ActiveRecord: 0.0ms)
+2014-01-14T20:58:13.133300+00:00 app[web.1]: Started POST "/signin" for 89.186.129.13 at 2014-01-14 20:58:13 +0000
+2014-01-14T20:58:13.145333+00:00 app[web.1]: Processing by Devise::SessionsController#create as HTML
+2014-01-14T20:58:13.145916+00:00 app[web.1]:   Parameters: {"utf8"=>"‚úì", "authenticity_token"=>"9XCs5znd0YGIZ3A3TlgyCY/aPZHlFtb3BW+Kukf+eto=", "user"=>{"email"=>"mike.feustel@gmx.de", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+2014-01-14T20:58:13.548115+00:00 heroku[router]: at=info method=POST path=/signin host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=2ms service=440ms status=302 bytes=103
+2014-01-14T20:58:13.544925+00:00 app[web.1]: Redirected to http://quiet-crag-9089.herokuapp.com/
+2014-01-14T20:58:13.545384+00:00 app[web.1]: Completed 302 Found in 396.2ms (ActiveRecord: 0.0ms)
+2014-01-14T20:58:13.685786+00:00 app[web.1]: Started GET "/" for 89.186.129.13 at 2014-01-14 20:58:13 +0000
+2014-01-14T20:58:13.688600+00:00 app[web.1]: Processing by UsersController#index as HTML
+2014-01-14T20:58:13.738532+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (40.7ms)
+2014-01-14T20:58:13.761579+00:00 app[web.1]: Completed 200 OK in 71.8ms (Views: 65.2ms | ActiveRecord: 4.4ms)
+2014-01-14T20:58:02.685114+00:00 heroku[router]: at=info method=GET path=/signout host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=2ms service=41ms status=302 bytes=103
+2014-01-14T20:57:52.552605+00:00 heroku[router]: at=info method=GET path=/ host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=3ms service=1085ms status=302 bytes=118
+2014-01-14T20:58:04.819028+00:00 heroku[router]: at=info method=GET path=/login host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=7ms service=1086ms status=200 bytes=5630
+2014-01-14T20:57:53.274817+00:00 heroku[router]: at=info method=GET path=/assets/application-d76072a7ed371cf986fd5fbaa05a8ef6.css host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=55ms status=200 bytes=337618
+2014-01-14T20:58:13.765370+00:00 heroku[router]: at=info method=GET path=/ host=quiet-crag-9089.herokuapp.com fwd="89.186.129.13" dyno=web.1 connect=1ms service=90ms status=200 bytes=10290

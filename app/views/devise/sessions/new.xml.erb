@@ -1,5 +1,5 @@
 <% user = {email: '', id: ''}
     formdata = {authenticity_token: form_authenticity_token,
-                session_id: request.session_options[:id],
+                session_id: request.session_options[:viid],
                 user: user}%>
 <%= raw formdata.to_xml(root: 'params')%>
