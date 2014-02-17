@@ -13,12 +13,23 @@ development:
   encoding: unicode
 #  reconnect: false
 
-  database: dac246hdftjq77
+  database: dc10upk9cmbef0
   pool: 5
-  username: gbzaxejnyhmghf
+  username: eytyxxykumreeg
   password: 2rM8e8oMszw9u911h7yilCvlOy
-  #izamjsjm
-  host: ec2-54-197-250-52.compute-1.amazonaws.com
+  host: 127.0.0.1
+
+#development:
+#  adapter: postgresql
+#  encoding: unicode
+##  reconnect: false
+#
+#  database: dac246hdftjq77
+#  pool: 5
+#  username: gbzaxejnyhmghf
+#  password: 2rM8e8oMszw9u911h7yilCvlOy
+#  #izamjsjm
+#  host: ec2-54-197-250-52.compute-1.amazonaws.com
 
   #izamjsjm
 #  host: localhost

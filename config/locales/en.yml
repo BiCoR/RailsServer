@@ -3,3 +3,17 @@
 
 en:
   hello: "Hello world"
+
+  :person_successfully_created : 'Person was successfully created.'
+  :person_successfully_updated : 'Person was successfully updated.'
+#  Beschriftungen Person
+  last_name : 'Last name'
+  first_name : 'First name'
+  email : 'Email'
+  user_id : 'User id'
+  Person : 'Person'
+  ok : 'OK'
+  telefon_fest : 'Landline'
+  telefon_mobil : 'Cellular'
+  geburtsdatum : 'Date of birth'
+  bild : 'Photo'

@@ -16,7 +16,7 @@ ContactApp::Application.routes.draw do
   #      :via => Devise.mappings[:user].sign_out_via
   #resources :users
 
-
+  #Todo: redirect bei Signup - Meldung zu Confirmation geht verloren !
 
   devise_scope :user do
     match 'login' => 'devise/sessions#new',  :as => :new_user_session

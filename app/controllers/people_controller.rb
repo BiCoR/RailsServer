@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 class PeopleController < ApplicationController
 
   before_filter :authenticate_user!
@@ -43,7 +45,7 @@ class PeopleController < ApplicationController
   def show
     #render :text => params.inspect
 
-    #TODO: find_by_id berücksichtigt scope nicht ?!
+    #TODO: find_by_id beruecksichtigt scope nicht ?!
     @person = Person.find_by_id(params[:id])
 
     if @person && @person.user_id == current_user.id
@@ -83,11 +85,11 @@ class PeopleController < ApplicationController
     @person = Person.new(params[:person])
     respond_to do |format|
       if @person.user == current_user && @person.save
-        format.html { redirect_to user_person_path(:user_id => params[:user_id], :id => @person.id), notice: 'Person was successfully created.' }
+        format.html { redirect_to user_person_path(:user_id => params[:user_id], :id => @person.id), notice: t(':person_successfully_created') }
         format.json { render json: @person, status: :created, location: @person }
         format.xml  { render xml:  @person, status: :created, location: @person }
       else
-        format.html { render action: "new" }
+        format.html { render action: :new }
         format.json { render json: @person.errors, status: :unprocessable_entity }
         format.xml  { render xml: @person.errors, status: :unprocessable_entity }
       end
@@ -101,11 +103,11 @@ class PeopleController < ApplicationController
 
     respond_to do |format|
       if @person.user == current_user && @person.update_attributes(params[:person])
-        format.html { redirect_to user_person_path(:user_id => @person.user_id, :id => @person.id), notice: 'Person was successfully updated.' }
+        format.html { redirect_to user_person_path(:user_id => @person.user_id, :id => @person.id), notice: t('person_successfully_updated')}
         format.json { head :no_content }
-        format.xml  { render xml: 'OK' }
+        format.xml  { render xml: :ok }
       else
-        format.html { render action: "edit" }
+        format.html { render action: :edit }
         format.json { render json: @person.errors, status: :unprocessable_entity }
         format.xml  { render xml: @person.errors, status: :unprocessable_entity }
       end
@@ -122,7 +124,7 @@ class PeopleController < ApplicationController
     respond_to do |format|
       format.html { redirect_to user_people_url }
       format.json { head :no_content }
-      format.xml  { render xml: 'OK' }
+      format.xml  { render xml: :ok }
     end
   end
 end

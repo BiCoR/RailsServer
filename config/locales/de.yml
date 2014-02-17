@@ -1,0 +1,47 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+de:
+  hello: "Hallo Welt"
+  person_successfully_created : 'Der Eintrag wurde erstellt.'
+  person_successfully_updated : 'Der Eintrag wurde aktualisiert.'
+  ok : 'OK'
+  unauthenticated : 'Unangemeldeter Benutzer'
+#  de.devise.failure.user.unauthenticated : 'Unangemeldeter Benutzer'
+  Person : 'Kontakt'
+  first_name : 'Vorname'
+  last_name : 'Nachname'
+  geburtsdatum : 'Geburtsdatum'
+  id: 'Id'
+  email: 'email'
+  telefon_fest: 'Telefon'
+  telefon_mobil: 'Mobiltelefon'
+  bild: 'Bild'
+  created_at: 'erstellt'
+  password: 'Passwort'
+  Sign in : 'Anmeldung'
+  remember_me: 'Anmeldung speichern'
+  date:
+    order:
+      - :day
+      - :month
+      - :year
+  devise:
+    failure:
+      user:
+        unauthenticated : 'Bitte Anmelden!'
+
+#  date:
+#    formats:
+##      order: [ :day, :month, :year ]
+#      default: "%d.%m.%Y"
+#      short: "%e. %b"
+#      long: "%e. %B %Y"
+#      only_day: "%e"
+#      day_names: [Sonntag, Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag]
+#      abbr_day_names: [So, Mo, Di, Mi, Do, Fr, Sa]
+#      month_names: [~, Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember]
+#      abbr_month_names: [~, Jan, Feb, Mär, Apr, Mai, Jun, Jul, Aug, Sep, Okt, Nov, Dez]
+#  time:
+#    formats:
+#      default: "%d.%m.%Y %I:%M"
