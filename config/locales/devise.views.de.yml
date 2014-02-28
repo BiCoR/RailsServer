@@ -26,6 +26,8 @@ de:
       new:
         forgot_your_password: Haben Sie Ihr Passwort vergessen?
         send_me_reset_password_instructions: Schicken Sie mir die Anleitung, mein Passwort zurückzusetzen
+      edit:
+        new_password: Neues Passwort
     registrations:
       edit:
         are_you_sure: Sind Sie sicher?
