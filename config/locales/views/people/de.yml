@@ -1,0 +1,23 @@
+# ruby encoding: utf-8
+
+de:
+  views:
+    show: Anzeigen
+    edit: Editieren
+    destroy: Löschen
+    are_your_sure: Sind Sie sicher?
+    back: Zurück
+    edit: Bearbeiten
+    person:
+      index:
+        title: Liste aller Kontakte
+        new_person: Neuer Kontakt
+      edit:
+        title: Kontakt bearbeiten
+      new:
+        title: Neuer Kontakt
+      flash_messages:
+        person_was_successfully_created: 'Der Kontakt wurde erfolgreich angelegt.'
+        person_was_successfully_updated: 'Der Kontakt wurde erfolgreich aktualisiert.'
+        person_successfully_created: 'Der Kontakt wurde erfolgreich angelegt.'
+        person_successfully_updated: 'Der Kontakt wurde erfolgreich aktualisiert.'

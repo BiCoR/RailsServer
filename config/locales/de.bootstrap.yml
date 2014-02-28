@@ -13,7 +13,7 @@ de:
       edit: "Bearbeiten"
     titles:
       last_name: 'Nachname'
-      edit: "Bearbeitung %{model}"
+      edit: "%{model} bearbeiten"
       save: "%{model} speichern"
-      new: "Neuer %{model}"
+      new: "%{model} hinzufügen"
       delete: "%{model} löschen"

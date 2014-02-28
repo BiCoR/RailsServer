@@ -8,31 +8,15 @@
 #
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
+
 development:
   adapter: postgresql
   encoding: unicode
-#  reconnect: false
-
   database: dc10upk9cmbef0
   pool: 5
   username: eytyxxykumreeg
   password: 2rM8e8oMszw9u911h7yilCvlOy
   host: 127.0.0.1
-
-#development:
-#  adapter: postgresql
-#  encoding: unicode
-##  reconnect: false
-#
-#  database: dac246hdftjq77
-#  pool: 5
-#  username: gbzaxejnyhmghf
-#  password: 2rM8e8oMszw9u911h7yilCvlOy
-#  #izamjsjm
-#  host: ec2-54-197-250-52.compute-1.amazonaws.com
-
-  #izamjsjm
-#  host: localhost
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -40,24 +24,17 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-#  reconnect: false
-  database: dac246hdftjq77
+  database: dc10upk9cmbef0
   pool: 5
-  username: gbzaxejnyhmghf
+  username: eytyxxykumreeg
   password: 2rM8e8oMszw9u911h7yilCvlOy
-  #izamjsjm
-  host: ec2-54-197-250-52.compute-1.amazonaws.com
-
-#  password: izamjsjm
-#  host: localhost
+  host: 127.0.0.1
 
 production:
   adapter: postgresql
   encoding: unicode
-#  reconnect: false
-  database: dac246hdftjq77
+  database: dc10upk9cmbef0
   pool: 5
-  username: gbzaxejnyhmghf
+  username: eytyxxykumreeg
   password: 2rM8e8oMszw9u911h7yilCvlOy
-  #izamjsjm
-  host: ec2-54-197-250-52.compute-1.amazonaws.com
+  host: 127.0.0.1

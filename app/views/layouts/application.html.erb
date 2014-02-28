@@ -41,50 +41,40 @@
     <div class="navbar navbar-fluid-top">
       <div class="navbar-inner">
         <div class="container-fluid">
+
           <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#"><%= PROJECT_NAME %>[<%=I18n.locale%>]</a>
+          <a class="brand" href="#"><%= PROJECT_NAME %></a>
+
+          <div class="pull-left" style="width: 32px; margin: 4px 4px auto;">
+             <% if I18n.locale.equal?(:de) %>
+                <%= image_tag(FLAG_DE) %>
+              <% elsif I18n.locale.equal?(:en) %>
+                <%= image_tag(FLAG_EN) %>
+              <% end %>
+          </div>
 
           <div class="container-fluid nav-collapse">
-            <!--<ul class="nav">-->
-              <!--<li><%= link_to "Link1", "/path1"  %></li>-->
-              <!--<li><%= link_to "Link2", "/path2"  %></li>-->
-              <!--<li><%= link_to "Link3", "/path3"  %></li>-->
-            <!--</ul>-->
-            <% if current_user %>
-                <div class="pull-right">
-                  <div class="pull-left" style="margin-top: 11px; margin-right: 20px;">
-                    <label class="control-label pull-left" id="current_user_email"><%= current_user.email %></label>
-                  </div>
-                  <div class="pull-right" style="margin-top: 1px;">
-                    <!--<div class="btn-group logoutButtonGroup">-->
-                    <a class="btn" id="logoutButton" href=<%= destroy_user_session_path %>>
-                      <i class="icon-user"></i>
-                      Logout
-                    </a>
-                    <!--</div>-->
-                  </div>
-                </div>
-            <% end %>
-          </div><!--/.nav-collapse -->
+          <% if current_user %>
+            <div class="pull-right">
+              <div class="pull-left" style="margin-top: 11px; margin-right: 20px;">
+                <label class="control-label pull-left" id="current_user_email"><%= current_user.email %></label>
+              </div>
+              <div class="pull-right" style="margin-top: 1px;">
+                <!--<div class="btn-group logoutButtonGroup">-->
+                <a class="btn" id="logoutButton" href=<%= destroy_user_session_path %>>
+                  <i class="icon-user"></i>
+                  Logout
+                </a>
+                <!--</div>-->
+              </div>
+            </div>
+          <% end %>
 
-          <!--<div class="input-group">-->
-            <!--<div class="input-group-btn">-->
-              <!--<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>-->
-              <!--<ul class="dropdown-menu">-->
-                <!--<li><a href="#">Action</a></li>-->
-                <!--<li><a href="#">Another action</a></li>-->
-                <!--<li><a href="#">Something else here</a></li>-->
-                <!--<li class="divider"></li>-->
-                <!--<li><a href="#">Separated link</a></li>-->
-              <!--</ul>-->
-            <!--</div>&lt;!&ndash; /btn-group &ndash;&gt;-->
-            <!--<input type="text" class="form-control">-->
-          <!--</div>&lt;!&ndash; /input-group &ndash;&gt;-->
-
+        </div><!--/.nav-collapse -->
 
         </div>
       </div>
@@ -110,9 +100,23 @@
         </div>
       </div><!--/row-->
 
-      <footer class="pull-right">
-        <p></p>
-        <p>&copy; <%= PROJECT_COMPANY + ' ' + PROJECT_YEAR %></p>
+      <p></p>
+
+      <footer >
+
+        <div style="width: 1000px; margin: auto">
+          <p class="text-center">
+          <a href="/impressum.html" target="_blank" title=<%=t('impressum')%>><%= t('impressum') %></a>
+          <a href="/datenschutzerklaerung.html" target="_blank" title=<%=t('datenschutzerklaerung')%>><%= t('datenschutzerklaerung') %></a>
+          <a href="/disclaimer.html" target="_blank" title=<%=t('disclaimer')%>><%= t('disclaimer') %></a>
+          </p>
+        </div>
+
+        <div class="pull-right" style="text-align: center;">
+          <p>Version: <%=STRING_VERSION_NUMBER%> &sdot; <%=STRING_VERSION_DATE%></p>
+          <p class="pull-right">&copy; <%= PROJECT_COMPANY + ' ' + PROJECT_YEAR %></p>
+        </div>
+
       </footer>
 
     </div> <!-- /container -->

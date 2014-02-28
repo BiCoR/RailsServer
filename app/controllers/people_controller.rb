@@ -85,7 +85,7 @@ class PeopleController < ApplicationController
     @person = Person.new(params[:person])
     respond_to do |format|
       if @person.user == current_user && @person.save
-        format.html { redirect_to user_person_path(:user_id => params[:user_id], :id => @person.id), notice: t(':person_successfully_created') }
+        format.html { redirect_to user_person_path(:user_id => params[:user_id], :id => @person.id), notice: t('person_successfully_created') }
         format.json { render json: @person, status: :created, location: @person }
         format.xml  { render xml:  @person, status: :created, location: @person }
       else
