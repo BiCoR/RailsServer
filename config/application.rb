@@ -78,9 +78,9 @@ module ContactApp
     ActionMailer::Base.delivery_method = :smtp
 
     # The default locale is :de and all translations from config/locales/*.rb,yml are auto loaded.
-    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', 'models', '*', '*.yml').to_s]
-    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', 'views', '*', '*.yml').to_s]
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*', '*.yml').to_s]
     config.i18n.default_locale = :de
     config.i18n.enforce_available_locales = true
+    I18n.enforce_available_locales = true
   end
 end

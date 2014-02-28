@@ -35,6 +35,7 @@ gem 'therubyracer' #, :platforms => :ruby
 
 # Devise Authentification
 gem 'devise'
+gem 'devise-i18n'
 
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby' #, '~> 3.0.0'
@@ -57,4 +58,5 @@ gem 'twitter-bootstrap-rails'#, :git => 'http://github.com/seyhunak/twitter-boot
 gem 'http_accept_language'
 
 gem 'rails-i18n'
+gem 'devise-i18n-views'
 gem 'thin'

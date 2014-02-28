@@ -2,106 +2,32 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 de:
-  hello: "Hallo Welt"
-  ok : 'OK'
-  first_name : 'Vorname'
-  last_name : 'Nachname'
-  geburtsdatum : 'Geburtsdatum'
-  id: 'Id'
-  email: 'Email'
-  telefon_fest: 'Telefon'
-  telefon_mobil: 'Mobiltelefon'
-  bild: 'Bild'
-  created_at: 'erstellt'
-  password: 'Passwort'
-  Sign in : 'Anmeldung'
-  sign_in : 'Anmeldung'
-  sign_up : 'Registrierung'
-  Person : 'Kontakt'
-  People : 'Kontakte'
-  person_was_successfully_created: 'Der Kontakt wurde erfolgreich angelegt.'
-  person_was_successfully_updated: 'Der Kontakt wurde erfolgreich aktualisiert.'
+  :email: 'E-Mail'
+  :password: 'Passwort'
+  :password_confirmation: 'Wiederholung Passwort'
+  :remember_me: 'angemeldet bleiben'
+  :sign_in : 'Anmeldung'
+  :sign_up : 'Registrierung'
+  :logout: 'Abmelden'
   :person_successfully_created: 'Der Kontakt wurde erfolgreich angelegt.'
   :person_successfully_updated: 'Der Kontakt wurde erfolgreich aktualisiert.'
+
+  'User was successfully created': 'Benutzer wurde erfolgreich angelegt.'
+  'User was successfully updated': 'Benutzer wurde erfolgreich aktualisiert.'
 
   impressum : 'Impressum'
   datenschutzerklaerung : 'Datenschutzerklärung'
   disclaimer : 'Haftungsausschluss'
-
-  remember_me: 'Anmeldung speichern'
-  forgot_your_password : "Passwort vergessen?"
-  didn_t_receive_confirmation_instructions : "Bestätigungsmail nicht erhalten?"
-  "Didn't receive unlock instructions?" : "Entsperranweisungen nicht erhalten?"
-  "Sign in with" : "Anmelden mit"
 
   date:
     order:
       - :day
       - :month
       - :year
-  devise:
-    failure:
-      user:
-        unauthenticated : 'Bitte Anmelden!'
-    confirmations:
-      confirmed: "Der Account wurde erfolgreich bestätigt."
-      send_instructions: "In wenigen Minuten erhalten Sie eine Email mit Anweisungen, wie Sie Ihren Account bestätigen können."
-      send_paranoid_instructions: "Wenn Ihre E-Mail-Adresse in unserer Datenbank existiert, erhalten Sie eine E-Mail mit Anweisungen, wie Sie Ihren Account bestätigen können."
-    failure:
-      already_authenticated: "Sie sind bereits angemeldet."
-      inactive: "Ihr Account ist noch nicht aktiviert."
-      invalid: "Ungültige E-Mail-Adresse bzw. Passwort."
-      locked: "Ihr Account ist gesperrt."
-      last_attempt: "Sie haben noch einen Versuch bevor Ihr Account gesperrt wird."
-      not_found_in_database: "Ungültige E-Mail-Adresse bzw. Passwort."
-      timeout: "Ihre Sitzung ist abgelaufen. Bitte melden Sie sich erneut an, um fortzufahren."
-      unauthenticated: "Sie müssen sich anmelden, um fortzufahren."
-      unconfirmed: "Sie müssen Ihren Account bestätigen, bevor Sie fortfahren können."
-    mailer:
-      confirmation_instructions:
-        subject: "Bestätigungsanweisungen"
-      reset_password_instructions:
-        subject: "Passwort-Rücksetzanweisungen"
-      unlock_instructions:
-        subject: "Entsperr-Anweisungen"
-    omniauth_callbacks:
-      failure: "Sie konnten nicht durch %{kind} authentifiziert werden, da \"%{reason}\"."
-      success: "Erfolgreich durch %{kind} authentifiziert."
-    passwords:
-      no_token: "Diese Seite kann nur nach Erhalt einer Passwort-Rücksetz-E-Mail aufgerufen werden. Wenn Sie diese erhalten haben, überprüfen bitte Sie die Vollständigkeit der URL."
-      send_instructions:  "In wenigen Minuten erhalten Sie eine Email mit Anweisungen, wie Sie Ihren Account bestätigen können."
-      send_paranoid_instructions: "Wenn Ihre E-Mail-Adresse in unserer Datenbank existiert, erhalten Sie eine E-Mail mit Anweisungen, wie Sie Ihren Account bestätigen können."
-      updated: "Ihr Passwort wurde erfolgreich geändert. Sie sind nun angemeldet."
-      updated_not_active: "Ihr Passwort wurde erfolgreich geändert."
-    registrations:
-      destroyed: "Auf Wiedersehen! Ihr Benutzerkonto wurde erfolgreich gelöscht. Wir hoffen Sie bald wieder begrüßen zu dürfen."
-      signed_up: "Willkommen! Sie haben sich erfolgreich angemeldet."
-      signed_up_but_inactive: "Sie haben sich erfolgreich registriert. Sie konnten allerdings nicht angemeldet werden, da ihr Benutzerkonto noch nicht aktiviert wurde."
-      signed_up_but_locked: "Sie haben sich erfolgreich registriert. Sie konnten allerdings nicht angemeldet werden, da ihr Benutzerkonto gesperrt ist."
-      signed_up_but_unconfirmed: "Eine Nachricht mit einem Bestätigungslink wurde an Ihre Adresse versandt. Bitte öffnen Sie diesen Link, um Ihr Benutzerkonto zu aktivieren."
-      update_needs_confirmation: "Sie haben Ihr Benutzerkonto erfolgreich aktualisiert. Bitte prüfen Sie Ihre E-Mails und offnen Sie den Bestätigungslink, um die neue E-Mail-Adresse zu aktivieren."
-      updated: "Ihr Benutzerkonto wurde erfolgreich aktualisiert."
-    sessions:
-      signed_in: "Anmeldung erfolgreich."
-      signed_out: "Abmeldung erfolgreich."
-    unlocks:
-      send_instructions: "Sie erhalten in Kürze eine E-Mail mit Anweisungen zum Entsperren Ihres Benutzerkontos."
-      send_paranoid_instructions: "Wenn Ihr Benutzerkonto existiert, erhalten Sie in Kürze eine E-Mail mit Anweisungen zum Entsperren Ihres Benutzerkontos."
-      unlocked: "Ihr Benutzerkonto wurde erfolgreich entsperrt. Bitte melden Sie sich an, um fortzufahren."
-  errors:
-    messages:
-      already_confirmed: "wurde bereits bestätigt, bitte Anmeldung versuchen"
-      confirmation_period_expired: "muss innerhalb %(period) bestätigt werden, bitte einen neuen anfordern"
-      expired: "ist abgelaufen, bitte einen neuen anfordern"
-      not_found: "nicht gefunden"
-      not_locked: "war nicht gesperrt"
-      not_saved:
-        one: "1 Fehler verhinderte die Speicherung von: %{resource}"
-        other: "%{count} Fehler verhinderte die Speicherung von: %{resource}"
 
 # Additional translations at https://github.com/plataformatec/devise/wiki/I18n
 
-
+#  date example
 #  date:
 #    formats:
 ##      order: [ :day, :month, :year ]

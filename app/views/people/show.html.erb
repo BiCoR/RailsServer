@@ -3,39 +3,35 @@
   <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
 </div>
 
-<table  class="table table-hover table-striped table-condensed">
+<table  class="table table-hover table-striped table-responsive">
   <caption></caption>
   <tr>
-    <td><strong><%= (t :last_name) %></td>
+    <td><strong><%= model_class.human_attribute_name(:last_name) %></td>
     <td><%= @person.last_name %></td>
   </tr>
   <tr>
-    <td><strong><%= (t :first_name ) %></td>
+    <td><strong><%= model_class.human_attribute_name(:first_name) %></td>
     <td><%= @person.first_name %></td>
   </tr>
   <tr>
-    <td><strong><%= (t :email ) %></td>
+    <td><strong><%= model_class.human_attribute_name(:email) %></td>
     <td><%= @person.email %></td>
   </tr>
   <tr>
-    <td><strong><%= (t :telefon_fest ) %></td>
+    <td><strong><%= model_class.human_attribute_name(:telefon_fest) %></td>
     <td><%= @person.telefon_fest %></td>
   </tr>
   <tr>
-    <td><strong><%= (t :telefon_mobil ) %></td>
+    <td><strong><%= model_class.human_attribute_name(:telefon_mobil) %></td>
     <td><%= @person.telefon_mobil %></td>
   </tr>
   <tr>
-    <td><strong><%= (t :geburtsdatum ) %></td>
+    <td><strong><%= model_class.human_attribute_name(:geburtsdatum) %></td>
     <td><%=l @person.geburtsdatum %></td>
-  </tr>
-  <tr>
-    <td><strong><%#= (t :bild ) %></td>
-    <td><%#= @person.bild %></td>
   </tr>
   <% if @current_user.isAdmin? %>
       <tr>
-        <td><strong><%= (t :user_id ) %></td>
+        <td><strong><%= model_class.human_attribute_name(:user_id) %></td>
         <td><%= @person.user_id %></td>
       </tr>
   <% end %>

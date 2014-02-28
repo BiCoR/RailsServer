@@ -1,0 +1,33 @@
+# ruby encoding: utf-8
+
+en:
+  activerecord:
+    models:
+      user:
+        one: 'User'
+        other: 'Users'
+    attributes:
+      person:
+        id: 'Id'
+        :last_name : 'Last name'
+        :first_name : 'First name'
+        email: 'Email'
+        reset_password_sent_at: 'Reset password sent at'
+        created_at: 'Created at'
+        encrypted_password: 'Encrypted password'
+        reset_password_token: 'Reset password token'
+        reset_password_sent_at: 'Reset password sent at'
+        remember_created_at: 'Remember created at'
+        current_sign_in_at: 'Current sign in at'
+        last_sign_in_at: 'Last sign in at'
+        current_sign_in_ip: 'Current sign in ip'
+        last_sign_in_ip: 'Last sign in ip'
+        confirmation_token: 'Confirmation token'
+        confirmed_at: 'Confirmed at'
+        confirmation_sent_at: 'Confirmation sent at'
+        unconfirmed_email: 'Unconfirmed email'
+        failed_attempts: 'Failed attempts'
+        unlock_token: 'Unlock token'
+        locked_at: 'Locked at'
+        admin: 'Admin'
+        created_at: 'Created at'

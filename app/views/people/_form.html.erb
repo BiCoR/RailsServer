@@ -6,37 +6,37 @@
 %>
 <%= form_for @person,  url: url_string, :html => { :class => 'form-horizontal' } do |f| %>
   <div class="control-group">
-    <%= f.label :first_name, t(:first_name), :class => 'control-label' %>
+    <%= f.label :first_name, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :first_name, :class => 'text_field' %>
     </div>
   </div>
     <div class="control-group">
-      <%= f.label :last_name, t(:last_name), :class => 'control-label' %>
+      <%= f.label :last_name, :class => 'control-label' %>
       <div class="controls">
         <%= f.text_field :last_name, :class => 'text_field' %>
       </div>
     </div>
   <div class="control-group">
-    <%= f.label :email, t(:email), :class => 'control-label' %>
+    <%= f.label :email, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :email, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :telefon_fest, t(:telefon_fest), :class => 'control-label' %>
+    <%= f.label :telefon_fest, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :telefon_fest, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :telefon_mobil, t(:telefon_mobil), :class => 'control-label' %>
+    <%= f.label :telefon_mobil, :class => 'control-label' %>
     <div class="controls">
       <%= f.text_field :telefon_mobil, :class => 'text_field' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :geburtsdatum, t(:geburtsdatum), :class => 'control-label' %>
+    <%= f.label :geburtsdatum, :class => 'control-label' %>
     <div class="controls">
       <%= f.date_select :geburtsdatum, start_year: 1900, :end_year => Date.current.year, :class => 'date_select' %>
     </div>

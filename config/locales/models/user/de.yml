@@ -1,0 +1,34 @@
+# ruby encoding: utf-8
+
+de:
+  activerecord:
+    models:
+      user: 'Benutzer'
+    attributes:
+      user:
+        id: 'Id'
+        last_name : 'Nachname'
+        first_name : 'Vorname'
+        email: 'E-Mail'
+        reset_password_sent_at: 'Rücksetzpasswort gesendet'
+        telefon_mobil: 'Mobiltelefon'
+        bild: 'Bild'
+        geburtsdatum : 'Geburtsdatum'
+        created_at: 'erstellt'
+        encrypted_password: 'verschlüsseltes Passwort'
+        reset_password_token: 'Passwort-Rücksetz-Token'
+        reset_password_sent_at: 'Passwort-Rücksetzung gesendet'
+        remember_created_at: 'Anmeldung speichern seit'
+        current_sign_in_at: 'aktuelle Anmeldung'
+        last_sign_in_at: 'Letzte Anmeldung am'
+        current_sign_in_ip: 'IP aktuelle Anmeldung'
+        last_sign_in_ip: 'IP letzte Anmeldung'
+        confirmation_token: 'Bestätigungstoken'
+        confirmed_at: 'Bestätigt am'
+        confirmation_sent_at: 'Bestätigung gesendet am'
+        unconfirmed_email: 'Unbestätigte E-Mail'
+        failed_attempts: 'Fehlversuche'
+        unlock_token: 'Entsperrtoken'
+        locked_at: 'Gesperrt am'
+        admin: 'Administrator'
+        created_at: 'Erstellt am'

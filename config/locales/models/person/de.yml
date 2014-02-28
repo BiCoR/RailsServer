@@ -1,0 +1,19 @@
+# ruby encoding: utf-8
+
+de:
+  activerecord:
+    models:
+      person:
+        one: 'Kontakt'
+        other: 'Kontakte'
+    attributes:
+      person:
+        id: 'Id'
+        last_name : 'Nachname'
+        first_name : 'Vorname'
+        email: 'E-Mail'
+        telefon_fest: 'Telefon'
+        telefon_mobil: 'Mobiltelefon'
+        bild: 'Bild'
+        geburtsdatum : 'Geburtsdatum'
+        created_at: 'Erstellt'

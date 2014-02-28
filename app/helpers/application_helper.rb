@@ -16,10 +16,12 @@ module ApplicationHelper
   end
 
   def check_admin_only
+    #flash.keep(:notice)
     redirect_to user_people_path(current_user.id) unless current_user.isAdmin?
   end
 
   def check_admin_or_own
+    #flash.keep(:notice)
     redirect_to user_people_path(current_user.id) unless current_user.isAdmin? || current_user.id == params[:id]
   end
 

@@ -2,25 +2,20 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  :email : 'Email'
+  :password: 'Password'
+  :password_confirmation: 'Password confirmation'
+  :remember_me: 'remember me'
+  :sign_in : 'Sign in'
+  :sign_up : 'Sign up'
+  :logout: 'Logout'
 
   :person_successfully_created : 'Person was successfully created.'
   :person_successfully_updated : 'Person was successfully updated.'
-#  Beschriftungen Person
-  last_name : 'Last name'
-  first_name : 'First name'
-  email : 'Email'
-  user_id : 'User id'
-  Person : 'Person'
-  ok : 'OK'
-  telefon_fest : 'Landline'
-  telefon_mobil : 'Cellular'
-  geburtsdatum : 'Date of birth'
-  bild : 'Photo'
-  
-  devise:
-    shared:
-      forgot_your_password : "Forgot your password?"
-      didn_t_receive_confirmation_instructions : "Didn't receive confirmation instructions?"
-      "Didn't receive unlock instructions?" : "Didn't receive unlock instructions?"
-      "Sign in with" : "Sign in with"
+
+  'User was successfully created': 'User was successfully created.'
+  'User was successfully updated': 'User was successfully updated.'
+
+  impressum : 'Imprint'
+  datenschutzerklaerung : 'Privacy policy'
+  disclaimer : 'Disclaimer'

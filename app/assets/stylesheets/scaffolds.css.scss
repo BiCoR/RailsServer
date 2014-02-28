@@ -18,14 +18,26 @@ pre {
   font-size: 11px;
 }
 
-a {
+a:not(.btn) {
   color: #00a;
   &:visited {
-    color: #666;
+    color: #777;
   }
   &:hover {
-    color: #fff;
-    background-color: #666;
+//    color: #fff;
+//    background-color: #666;
+    background-color: #efefef;
+  }
+}
+
+a.btn-primary {
+  &:visited {
+    color: #ffffff;
+  }
+  &:hover {
+        color: #000;
+    //    background-color: #666;
+//    background-color: #efefef;
   }
 }
 
