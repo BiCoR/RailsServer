@@ -3,8 +3,9 @@
 class UsersController < ApplicationController
   include ApplicationHelper
 
-  before_filter :authenticate_user!
   before_filter do
+    flash.keep
+    :authenticate_user!
     redirect_to :new_user_session unless current_user # && current_user.admin?
   end
 

@@ -28,6 +28,9 @@ de:
         send_me_reset_password_instructions: Schicken Sie mir die Anleitung, mein Passwort zurückzusetzen
       edit:
         new_password: Neues Passwort
+        confirm_new_password: Wiederholung neues Passwort
+        change_my_password: Passwort ändern
+        change_your_password: Passwortänderung
     registrations:
       edit:
         are_you_sure: Sind Sie sicher?
