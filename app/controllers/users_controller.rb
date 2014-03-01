@@ -4,9 +4,12 @@ class UsersController < ApplicationController
   include ApplicationHelper
 
   before_filter do
-    flash.keep
-    :authenticate_user!
-    redirect_to :new_user_session unless current_user # && current_user.admin?
+    unless current_user
+      flash.now[:error] = t('devise.failure.unauthenticated')
+      flash.keep
+      #:authenticate_user!
+      redirect_to :new_user_session unless current_user # && current_user.admin?
+    end
   end
 
   before_filter :check_admin_only, :except => [:edit,:update, :destroy]

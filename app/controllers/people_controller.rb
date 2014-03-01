@@ -8,6 +8,7 @@ class PeopleController < ApplicationController
       check_admin_or_own
       set_current_user_id
     else
+      flash.keep
       redirect_to :new_user_session
     end
   end
