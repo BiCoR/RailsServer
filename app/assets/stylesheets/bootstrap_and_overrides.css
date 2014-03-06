@@ -9,3 +9,8 @@
 .btn-devise {
     margin-top: 25px;
 }
+
+a.brand:hover{
+    color: blue !important;
+    background-color: transparent !important;
+}

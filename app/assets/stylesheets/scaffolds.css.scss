@@ -18,7 +18,7 @@ pre {
   font-size: 11px;
 }
 
-a:not(.btn) {
+a:not(.btn), a:not(.brand) {
   color: #00a;
   &:visited {
     color: #777;
@@ -28,6 +28,10 @@ a:not(.btn) {
 //    background-color: #666;
     background-color: #efefef;
   }
+}
+
+a.brand:hover{
+  color: blue !important;
 }
 
 a.btn-primary {
