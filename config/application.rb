@@ -10,9 +10,9 @@ require "sprockets/railtie"
 
 if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
-  Bundler.require(*Rails.groups(:assets => %w(development test)))
+  # Bundler.require(*Rails.groups(:assets => %w(development test)))
   # If you want your assets lazily compiled in production, use this line
-  # Bundler.require(:default, :assets, Rails.env)
+  Bundler.require(:default, :assets, Rails.env)
 end
 
 module ContactApp
@@ -72,8 +72,8 @@ module ContactApp
       :address        => ENV['MAILGUN_SMTP_SERVER'],
       :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
       :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-      :domain         => 'https://bicorem.mhinkelmann.de',
-#      :domain         => 'https://quiet-crag-9089.herokuapp.com',
+      #:domain         => 'https://bicorem.mhinkelmann.de',
+      :domain         => 'https://quiet-crag-9089.herokuapp.com',
       :authentication => :plain,
     }
     ActionMailer::Base.delivery_method = :smtp
