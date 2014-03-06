@@ -5,8 +5,8 @@ class UsersController < ApplicationController
 
   before_filter do
     unless current_user
-      flash.now[:error] = t('devise.failure.unauthenticated')
-      flash.keep
+      flash[:error] = t('devise.failure.unauthenticated')
+      flash.keep if flash[:notice]
       #:authenticate_user!
       redirect_to :new_user_session unless current_user # && current_user.admin?
     end

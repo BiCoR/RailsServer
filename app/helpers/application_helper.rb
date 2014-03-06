@@ -17,23 +17,23 @@ module ApplicationHelper
 
   def check_admin_only
     unless current_user.isAdmin?
-      flash.keep
+      flash.keep if flash[:notice]
       redirect_to user_people_path(current_user.id)
     end
   end
 
   def check_admin_or_own
     unless current_user.isAdmin? || current_user.id == params[:id]
-      flash.keep
+      flash.keep if flash[:notice]
       redirect_to user_people_path(current_user.id)
     end
   end
 
   private
   def set_locale
-    http_accept_language.user_preferred_languages # => %w(nl-NL nl-BE nl en-US en)
+    http_accept_language.user_preferred_languages
     available = %w(en de)
-    http_accept_language.preferred_language_from(available) # => 'nl-BE'
+    http_accept_language.preferred_language_from(available)
 
     I18n.locale = http_accept_language.compatible_language_from(available)
   end
