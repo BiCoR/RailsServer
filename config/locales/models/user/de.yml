@@ -32,3 +32,5 @@ de:
         locked_at: 'Gesperrt am'
         admin: 'Administrator'
         created_at: 'Erstellt am'
+        password: 'Passwort'
+        password_confirmation: 'Wiederholung Passwort'
