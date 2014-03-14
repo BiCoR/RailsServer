@@ -17,13 +17,8 @@
 /.git
 /.idea
 /vendor
-Gemfile.lock
-
-
-/Gemfile.lock
 
 /vendor
-/Gemfile.lock
 
 #*.rbc
 *.sassc
@@ -46,4 +41,3 @@ pickle-email-*.html
 
 /*.log
 /.idea
-/Gemfile.lock
