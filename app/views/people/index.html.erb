@@ -12,7 +12,6 @@
       <th><%= model_class.human_attribute_name(:telefon_fest) %></th>
       <th><%= model_class.human_attribute_name(:telefon_mobil) %></th>
       <th><%= model_class.human_attribute_name(:geburtsdatum) %></th>
-      <th><%= model_class.human_attribute_name(:bild) %></th>
       <% if @current_user.isAdmin? %>
         <th><%= model_class.human_attribute_name(:user_id) %></th>
       <% end %>
@@ -30,8 +29,7 @@
             <td><%= person.email %></td>
             <td><%= person.telefon_fest %></td>
             <td><%= person.telefon_mobil %></td>
-            <td><%= person.geburtsdatum %></td>
-            <td><%= person.bild %></td>
+            <td><%= l(person.geburtsdatum) if person.geburtsdatum %></td>
             <% if @current_user.isAdmin? %>
                 <td><%= person.user_id %></td>
             <% end %>

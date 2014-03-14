@@ -26,11 +26,6 @@ class PeopleController < ApplicationController
   # GET /people.json
   # GET /people.xml
   def index
-
-    #scope funkt. nicht
-    #@current_user_id = 3
-    #@people = Person.all
-
     @people = Person.where(:user_id => @current_user.id).all
 
     if @people
