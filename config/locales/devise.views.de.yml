@@ -35,7 +35,7 @@ de:
       edit:
         update: Aktualisieren
         are_you_sure: Sind Sie sicher?
-        unhappy: Unzufrieden?
+        unhappy: Unzufrieden
         cancel_my_account: Konto löschen
         leave_blank_if_you_don_t_want_to_change_it: freilassen, wenn Sie das nicht ändern wollen
         title: ! '%{resource} bearbeiten'
