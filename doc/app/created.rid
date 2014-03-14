@@ -1,7 +1,7 @@
-Fri, 14 Mar 2014 18:44:01 +0100
+Fri, 14 Mar 2014 19:43:13 +0100
 doc/README_FOR_APP	Fri, 14 Mar 2014 18:43:46 +0100
 app/controllers/application_controller.rb	Fri, 14 Mar 2014 15:56:25 +0100
-app/controllers/people_controller.rb	Sat, 01 Mar 2014 10:47:17 +0100
+app/controllers/people_controller.rb	Fri, 14 Mar 2014 19:40:02 +0100
 app/controllers/sessions_controller.rb	Fri, 28 Feb 2014 22:18:51 +0100
 app/controllers/users_controller.rb	Thu, 06 Mar 2014 12:51:41 +0100
 app/helpers/application_helper.rb	Fri, 14 Mar 2014 17:32:45 +0100

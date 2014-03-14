@@ -30,6 +30,7 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.3)
     atomic (1.1.14)
+    bcrypt (3.1.7-x86-mingw32)
     bcrypt-ruby (3.1.2-x86-mingw32)
     builder (3.0.4)
     coffee-rails (3.2.2)
@@ -50,7 +51,6 @@ GEM
     devise-i18n (0.10.2)
     devise-i18n-views (0.2.8)
     erubis (2.7.0)
-    eventmachine (1.0.3)
     eventmachine (1.0.3-x86-mingw32)
     execjs (2.0.2)
     hike (1.2.3)
@@ -118,8 +118,6 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    therubyracer (0.11.0beta1)
-      ref
     therubyracer (0.11.0beta1-x86-mingw32)
       ref
     thin (1.6.1)
@@ -149,7 +147,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  bcrypt-ruby
+  bcrypt
   coffee-rails (~> 3.2.1)
   devise
   devise-i18n

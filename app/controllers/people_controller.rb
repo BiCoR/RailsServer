@@ -24,6 +24,7 @@ class PeopleController < ApplicationController
 
   # GET /people
   # GET /people.json
+  # GET /people.xml
   def index
 
     #scope funkt. nicht
@@ -43,6 +44,7 @@ class PeopleController < ApplicationController
 
   # GET /people/1
   # GET /people/1.json
+  # GET /people/1.xml
   def show
     #render :text => params.inspect
 
@@ -62,6 +64,7 @@ class PeopleController < ApplicationController
 
   # GET /people/new
   # GET /people/new.json
+  # GET /people/new.xml
   def new
     #render :text => params.inspect
     @person = Person.new(:user_id => params[:user_id])
@@ -81,6 +84,7 @@ class PeopleController < ApplicationController
 
   # POST /people
   # POST /people.json
+  # POST /people.xml
   def create
     #render :text => params.inspect
     @person = Person.new(params[:person])
@@ -99,6 +103,7 @@ class PeopleController < ApplicationController
 
   # PUT /people/1
   # PUT /people/1.json
+  # PUT /people/1.xml
   def update
     @person = Person.find(params[:id])
 
@@ -117,6 +122,7 @@ class PeopleController < ApplicationController
 
   # DELETE /people/1
   # DELETE /people/1.json
+  # DELETE /people/1.xml
   def destroy
     @person = Person.find_by_id(params[:id])
     redirect_to_default unless @person && @person.user == current_user
