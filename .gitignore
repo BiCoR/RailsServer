@@ -46,3 +46,4 @@ pickle-email-*.html
 
 /*.log
 /.idea
+/Gemfile.lock
