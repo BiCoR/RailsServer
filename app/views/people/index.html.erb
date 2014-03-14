@@ -26,7 +26,7 @@
             <td><%= (link_to person.id, user_person_path(:user_id => person.user_id, :id => person.id)) if person.user_id %></td>
             <td><%= person.last_name %></td>
             <td><%= person.first_name %></td>
-            <td><%= person.email %></td>
+            <td><%= mail_to person.email %></td>
             <td><%= person.telefon_fest %></td>
             <td><%= person.telefon_mobil %></td>
             <td><%= l(person.geburtsdatum) if person.geburtsdatum %></td>

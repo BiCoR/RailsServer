@@ -34,7 +34,7 @@
     <% @users.each do |user| %>
       <tr>
         <td><%= link_to user.id, user_path(user) %></td>
-        <td><%= user.email %></td>
+        <td><%= mail_to user.email %></td>
         <td><%= user.admin %></td>
         <td><%= user.encrypted_password %></td>
         <td><%= user.reset_password_token %></td>
