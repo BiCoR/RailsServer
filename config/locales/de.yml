@@ -22,8 +22,10 @@ de:
   disclaimer : 'Haftungsausschluss'
 
   documentation : 'Dokumentation'
-  web_app_documentation : 'Webanwendung'
-  iphone_client_documentation : 'iPhone Client'
+  web_app_documentation : 'Webservice'
+  iphone_client_documentation : 'iPhone-Client'
+
+  back: 'Zurück'
 
   date:
     order:

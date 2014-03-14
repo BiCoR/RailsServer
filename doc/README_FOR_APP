@@ -1,2 +1,1 @@
-Use this README file to introduce your application and point to useful places in the API for learning more.
-Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+The application provides a web service for using with several clients. The user controller holds data for valid users. People controller outputs xml data to the client applications.

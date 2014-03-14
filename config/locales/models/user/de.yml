@@ -34,3 +34,4 @@ de:
         created_at: 'Erstellt am'
         password: 'Passwort'
         password_confirmation: 'Wiederholung Passwort'
+        current_password: 'Aktuelles Passwort'

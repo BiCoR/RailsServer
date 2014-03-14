@@ -4,7 +4,7 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
-<title>class ApplicationController - Rails Application Documentation</title>
+<title>class UserMailer - Rails Application Documentation</title>
 
 <link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
 
@@ -47,7 +47,7 @@
     <nav id="file-list-section" class="section">
   <h3 class="section-header">Defined In</h3>
   <ul>
-    <li>app/controllers/application_controller.rb
+    <li>app/mailers/user_mailer.rb
   </ul>
 </nav>
 
@@ -59,7 +59,7 @@
     <nav id="parent-class-section" class="section">
   <h3 class="section-header">Parent</h3>
   
-  <p class="link">ActionController::Base
+  <p class="link">ActionMailer::Base
   
 </nav>
 
@@ -70,7 +70,7 @@
   <ul class="link-list">
   
   
-    <li><a class="include" href="ApplicationHelper.html">ApplicationHelper</a>
+    <li><span class="include">Devise::Mailers::Helpers</span>
   
   
   </ul>
@@ -82,11 +82,11 @@
 
   <ul class="link-list">
     
-    <li><a href="#method-i-documentation">#documentation</a>
+    <li><a href="#method-i-confirmation_instructions">#confirmation_instructions</a>
     
-    <li><a href="#method-i-impressun">#impressun</a>
+    <li><a href="#method-i-reset_password_instructions">#reset_password_instructions</a>
     
-    <li><a href="#method-i-privacy_policy">#privacy_policy</a>
+    <li><a href="#method-i-unlock_instructions">#unlock_instructions</a>
     
   </ul>
 </nav>
@@ -136,7 +136,7 @@
 </nav>
 
 <div id="documentation">
-  <h1 class="class">class ApplicationController</h1>
+  <h1 class="class">class UserMailer</h1>
 
   <div id="description" class="description">
     
@@ -160,11 +160,11 @@
       <h3 class="section-header">Public Instance Methods</h3>
 
     
-      <div id="method-i-documentation" class="method-detail ">
+      <div id="method-i-confirmation_instructions" class="method-detail ">
         
         <div class="method-heading">
-          <span class="method-name">documentation</span><span
-            class="method-args">()</span>
+          <span class="method-name">confirmation_instructions</span><span
+            class="method-args">(record)</span>
           <span class="method-click-advice">click to toggle source</span>
         </div>
         
@@ -175,26 +175,26 @@
           
 
           
-          <div class="method-source-code" id="documentation-source">
-            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 13</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">documentation</span>
-  <span class="ruby-identifier">check_user_signed_in</span>
+          <div class="method-source-code" id="confirmation_instructions-source">
+            <pre><span class="ruby-comment"># File app/mailers/user_mailer.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">confirmation_instructions</span>(<span class="ruby-identifier">record</span>)
+  <span class="ruby-identifier">devise_mail</span>(<span class="ruby-identifier">record</span>, <span class="ruby-value">:confirmation_instructions</span>)
 <span class="ruby-keyword">end</span></pre>
-          </div><!-- documentation-source -->
+          </div><!-- confirmation_instructions-source -->
           
         </div>
 
         
 
         
-      </div><!-- documentation-method -->
+      </div><!-- confirmation_instructions-method -->
 
     
-      <div id="method-i-impressun" class="method-detail ">
+      <div id="method-i-reset_password_instructions" class="method-detail ">
         
         <div class="method-heading">
-          <span class="method-name">impressun</span><span
-            class="method-args">()</span>
+          <span class="method-name">reset_password_instructions</span><span
+            class="method-args">(record)</span>
           <span class="method-click-advice">click to toggle source</span>
         </div>
         
@@ -205,26 +205,26 @@
           
 
           
-          <div class="method-source-code" id="impressun-source">
-            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 9</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">impressun</span>
-
+          <div class="method-source-code" id="reset_password_instructions-source">
+            <pre><span class="ruby-comment"># File app/mailers/user_mailer.rb, line 10</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">reset_password_instructions</span>(<span class="ruby-identifier">record</span>)
+  <span class="ruby-identifier">devise_mail</span>(<span class="ruby-identifier">record</span>, <span class="ruby-value">:reset_password_instructions</span>)
 <span class="ruby-keyword">end</span></pre>
-          </div><!-- impressun-source -->
+          </div><!-- reset_password_instructions-source -->
           
         </div>
 
         
 
         
-      </div><!-- impressun-method -->
+      </div><!-- reset_password_instructions-method -->
 
     
-      <div id="method-i-privacy_policy" class="method-detail ">
+      <div id="method-i-unlock_instructions" class="method-detail ">
         
         <div class="method-heading">
-          <span class="method-name">privacy_policy</span><span
-            class="method-args">()</span>
+          <span class="method-name">unlock_instructions</span><span
+            class="method-args">(record)</span>
           <span class="method-click-advice">click to toggle source</span>
         </div>
         
@@ -235,19 +235,19 @@
           
 
           
-          <div class="method-source-code" id="privacy_policy-source">
-            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 17</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">privacy_policy</span>
-
+          <div class="method-source-code" id="unlock_instructions-source">
+            <pre><span class="ruby-comment"># File app/mailers/user_mailer.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">unlock_instructions</span>(<span class="ruby-identifier">record</span>)
+  <span class="ruby-identifier">devise_mail</span>(<span class="ruby-identifier">record</span>, <span class="ruby-value">:unlock_instructions</span>)
 <span class="ruby-keyword">end</span></pre>
-          </div><!-- privacy_policy-source -->
+          </div><!-- unlock_instructions-source -->
           
         </div>
 
         
 
         
-      </div><!-- privacy_policy-method -->
+      </div><!-- unlock_instructions-method -->
 
     
     </section><!-- public-instance-method-details -->

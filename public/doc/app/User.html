@@ -4,7 +4,7 @@
 <head>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
-<title>class ApplicationController - Rails Application Documentation</title>
+<title>class User - Rails Application Documentation</title>
 
 <link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
 
@@ -47,7 +47,7 @@
     <nav id="file-list-section" class="section">
   <h3 class="section-header">Defined In</h3>
   <ul>
-    <li>app/controllers/application_controller.rb
+    <li>app/models/user.rb
   </ul>
 </nav>
 
@@ -59,34 +59,22 @@
     <nav id="parent-class-section" class="section">
   <h3 class="section-header">Parent</h3>
   
-  <p class="link">ActionController::Base
+  <p class="link">ActiveRecord::Base
   
 </nav>
 
-    <!-- Included Modules -->
-<nav id="includes-section" class="section">
-  <h3 class="section-header">Included Modules</h3>
-
-  <ul class="link-list">
-  
-  
-    <li><a class="include" href="ApplicationHelper.html">ApplicationHelper</a>
-  
-  
-  </ul>
-</nav>
-
+    
     <!-- Method Quickref -->
 <nav id="method-list-section" class="section">
   <h3 class="section-header">Methods</h3>
 
   <ul class="link-list">
     
-    <li><a href="#method-i-documentation">#documentation</a>
+    <li><a href="#method-c-current_user_id">::current_user_id</a>
     
-    <li><a href="#method-i-impressun">#impressun</a>
+    <li><a href="#method-c-current_user_id-3D">::current_user_id=</a>
     
-    <li><a href="#method-i-privacy_policy">#privacy_policy</a>
+    <li><a href="#method-i-isAdmin-3F">#isAdmin?</a>
     
   </ul>
 </nav>
@@ -136,7 +124,7 @@
 </nav>
 
 <div id="documentation">
-  <h1 class="class">class ApplicationController</h1>
+  <h1 class="class">class User</h1>
 
   <div id="description" class="description">
     
@@ -156,14 +144,81 @@
 
     <!-- Methods -->
     
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-current_user_id" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">current_user_id</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="current_user_id-source">
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 21</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">current_user_id</span>
+  <span class="ruby-constant">Thread</span>.<span class="ruby-identifier">current</span>[<span class="ruby-value">:current_user_id</span>]
+  <span class="ruby-comment">#get_current_user_id</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- current_user_id-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- current_user_id-method -->
+
+    
+      <div id="method-c-current_user_id-3D" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">current_user_id=</span><span
+            class="method-args">(user_id)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="current_user_id-3D-source">
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 17</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">current_user_id=</span>(<span class="ruby-identifier">user_id</span>)
+  <span class="ruby-constant">Thread</span>.<span class="ruby-identifier">current</span>[<span class="ruby-value">:current_user_id</span>] = <span class="ruby-identifier">user_id</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- current_user_id-3D-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- current_user_id-3D-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
      <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
       <h3 class="section-header">Public Instance Methods</h3>
 
     
-      <div id="method-i-documentation" class="method-detail ">
+      <div id="method-i-isAdmin-3F" class="method-detail ">
         
         <div class="method-heading">
-          <span class="method-name">documentation</span><span
+          <span class="method-name">isAdmin?</span><span
             class="method-args">()</span>
           <span class="method-click-advice">click to toggle source</span>
         </div>
@@ -175,79 +230,19 @@
           
 
           
-          <div class="method-source-code" id="documentation-source">
-            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 13</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">documentation</span>
-  <span class="ruby-identifier">check_user_signed_in</span>
+          <div class="method-source-code" id="isAdmin-3F-source">
+            <pre><span class="ruby-comment"># File app/models/user.rb, line 27</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">isAdmin?</span>
+  <span class="ruby-identifier">admin</span>
 <span class="ruby-keyword">end</span></pre>
-          </div><!-- documentation-source -->
+          </div><!-- isAdmin-3F-source -->
           
         </div>
 
         
 
         
-      </div><!-- documentation-method -->
-
-    
-      <div id="method-i-impressun" class="method-detail ">
-        
-        <div class="method-heading">
-          <span class="method-name">impressun</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        </div>
-        
-
-        <div class="method-description">
-          
-          
-          
-
-          
-          <div class="method-source-code" id="impressun-source">
-            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 9</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">impressun</span>
-
-<span class="ruby-keyword">end</span></pre>
-          </div><!-- impressun-source -->
-          
-        </div>
-
-        
-
-        
-      </div><!-- impressun-method -->
-
-    
-      <div id="method-i-privacy_policy" class="method-detail ">
-        
-        <div class="method-heading">
-          <span class="method-name">privacy_policy</span><span
-            class="method-args">()</span>
-          <span class="method-click-advice">click to toggle source</span>
-        </div>
-        
-
-        <div class="method-description">
-          
-          
-          
-
-          
-          <div class="method-source-code" id="privacy_policy-source">
-            <pre><span class="ruby-comment"># File app/controllers/application_controller.rb, line 17</span>
-<span class="ruby-keyword">def</span> <span class="ruby-identifier">privacy_policy</span>
-
-<span class="ruby-keyword">end</span></pre>
-          </div><!-- privacy_policy-source -->
-          
-        </div>
-
-        
-
-        
-      </div><!-- privacy_policy-method -->
+      </div><!-- isAdmin-3F-method -->
 
     
     </section><!-- public-instance-method-details -->

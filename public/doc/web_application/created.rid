@@ -1,10 +1,10 @@
-Thu, 13 Mar 2014 18:46:18 +0100
-doc/README_FOR_APP	Thu, 02 Jan 2014 21:47:09 +0100
-app/controllers/application_controller.rb	Thu, 06 Mar 2014 13:45:37 +0100
+Fri, 14 Mar 2014 18:44:01 +0100
+doc/README_FOR_APP	Fri, 14 Mar 2014 18:43:46 +0100
+app/controllers/application_controller.rb	Fri, 14 Mar 2014 15:56:25 +0100
 app/controllers/people_controller.rb	Sat, 01 Mar 2014 10:47:17 +0100
 app/controllers/sessions_controller.rb	Fri, 28 Feb 2014 22:18:51 +0100
 app/controllers/users_controller.rb	Thu, 06 Mar 2014 12:51:41 +0100
-app/helpers/application_helper.rb	Thu, 06 Mar 2014 12:53:11 +0100
+app/helpers/application_helper.rb	Fri, 14 Mar 2014 17:32:45 +0100
 app/helpers/people_helper.rb	Mon, 17 Feb 2014 21:03:12 +0100
 app/helpers/users_helper.rb	Mon, 17 Feb 2014 21:03:12 +0100
 app/mailers/user_mailer.rb	Thu, 09 Jan 2014 17:28:42 +0100
