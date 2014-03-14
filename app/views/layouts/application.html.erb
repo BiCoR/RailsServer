@@ -71,19 +71,18 @@
                   <%#= link_to t('edit_account'), edit_user_registration_path(current_user), :class => 'btn btn-mini' %>
 
                   <div class="pull-right">
-                  <div class="pull-left" style="margin-top: 11px; margin-right: 20px;"><label class="control-label pull-left" id="current_user_email"><%= current_user.email %></label></div>
+                  <div class="pull-left" style="margin-top: 11px; margin-right: 20px;"><div class="control-label pull-left" id="current_user_email"><%= current_user.email %></div></div>
                   <div class="pull-right" style="margin-top: 1px;">
 
                     <div class="btn-group logoutButtonGroup">
-                      <a class="btn" id="logoutButton" href=<%= destroy_user_session_path %>><i class="icon-user"></i><%= t(:logout) %></a>
+                      <a class="btn" id="logoutButton" href=<%= destroy_user_session_path %>>
+                        <i class="icon-user" style="margin-right: 5px;"></i><%= t(:logout) %></a>
                       <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
                         <span class="caret"></span>
                         <!--<span class="sr-only">Toggle Dropdown</span>-->
                       </button>
                       <ul class="dropdown-menu" role="menu">
-                        <li><a href=<%= user_path(current_user) %>>Account löschen</a></li>
-                        <%= link_to t('edit_account'),
-                                    edit_user_registration_path(current_user)%>
+                        <li><a href=<%= edit_user_registration_path(current_user) %>><%= t('edit_account') %></a></li>
                       </ul>
                     </div>
 
