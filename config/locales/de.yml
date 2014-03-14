@@ -23,7 +23,8 @@ de:
 
   documentation : 'Dokumentation'
   web_app_documentation : 'Webservice'
-  iphone_client_documentation : 'iPhone-Client'
+  iphone_client_documentation : 'iPhone Anwendung'
+  pc_client_documentation : 'PC Anwendung'
 
   back: 'Zurück'
 
