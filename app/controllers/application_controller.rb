@@ -5,17 +5,18 @@ class ApplicationController < ActionController::Base
 
   protect_from_forgery
 
-  before_filter :before_filter_actions, :except => [:impressum, :disclaimer]
+  before_filter :before_filter_actions, :except => [:impressum, :privacy_policy]
 
   def impressun
 
   end
 
-  def disclaimer
-
+  def documentation
+    check_user_signed_in
   end
 
   def privacy_policy
 
   end
+
 end

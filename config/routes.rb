@@ -17,7 +17,7 @@ ContactApp::Application.routes.draw do
   #resources :users
 
   match 'impressum' => 'application#impressum',  :as => :impressum
-  match 'disclaimer' => 'application#disclaimer',  :as => :disclaimer
+  match 'documentation' => 'application#documentation',  :as => :documentation
   match 'privacy_policy' => 'application#privacy_policy',  :as => :privacy_policy
 
   devise_scope :user do

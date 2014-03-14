@@ -39,6 +39,7 @@
   <body>
 
       <div class="container">
+
         <div class="navbar navbar-fluid-top">
           <div class="navbar-inner">
 
@@ -66,17 +67,26 @@
 
               <div class="container-fluid nav-collapse">
               <% if current_user %>
-                <div class="pull-right">
-                  <div class="pull-left" style="margin-top: 11px; margin-right: 20px;">
-                    <label class="control-label pull-left" id="current_user_email"><%= current_user.email %></label>
-                  </div>
+
+                  <%#= link_to t('edit_account'), edit_user_registration_path(current_user), :class => 'btn btn-mini' %>
+
+                  <div class="pull-right">
+                  <div class="pull-left" style="margin-top: 11px; margin-right: 20px;"><label class="control-label pull-left" id="current_user_email"><%= current_user.email %></label></div>
                   <div class="pull-right" style="margin-top: 1px;">
-                    <!--<div class="btn-group logoutButtonGroup">-->
-                    <a class="btn" id="logoutButton" href=<%= destroy_user_session_path %>>
-                      <i class="icon-user"></i>
-                      <%= t(:logout) %>
-                    </a>
-                    <!--</div>-->
+
+                    <div class="btn-group logoutButtonGroup">
+                      <a class="btn" id="logoutButton" href=<%= destroy_user_session_path %>><i class="icon-user"></i><%= t(:logout) %></a>
+                      <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <!--<span class="sr-only">Toggle Dropdown</span>-->
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href=<%= user_path(current_user) %>>Account löschen</a></li>
+                        <%= link_to t('edit_account'),
+                                    edit_user_registration_path(current_user)%>
+                      </ul>
+                    </div>
+
                   </div>
                 </div>
               <% end %>
@@ -98,7 +108,7 @@
               <p class="text-center">
               <a href="/impressum.html" title=<%=t('impressum')%>><%= t('impressum') %></a>
               <a href="/privacy_policy.html" title=<%=t('datenschutzerklaerung')%>><%= t('datenschutzerklaerung') %></a>
-              <a href="/disclaimer.html" title=<%=t('disclaimer')%>><%= t('disclaimer') %></a>
+              <a href="/documentation.html" title=<%=t('documentation')%>><%= t('documentation') %></a>
               </p>
             </div>
 

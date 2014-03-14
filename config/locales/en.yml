@@ -16,6 +16,12 @@ en:
   'User was successfully created': 'User was successfully created.'
   'User was successfully updated': 'User was successfully updated.'
 
+  edit_account : 'Account...'
+
   impressum : 'Imprint'
   datenschutzerklaerung : 'Privacy policy'
   disclaimer : 'Disclaimer'
+
+  documentation : 'Documentation'
+  web_app_documentation : 'Web application'
+  iphone_client_documentation : 'iPhone Client'

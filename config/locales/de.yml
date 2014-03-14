@@ -15,9 +15,15 @@ de:
   'User was successfully created': 'Benutzer wurde erfolgreich angelegt.'
   'User was successfully updated': 'Benutzer wurde erfolgreich aktualisiert.'
 
+  edit_account : 'Registrierung...'
+
   impressum : 'Impressum'
   datenschutzerklaerung : 'Datenschutzerklärung'
   disclaimer : 'Haftungsausschluss'
+
+  documentation : 'Dokumentation'
+  web_app_documentation : 'Webanwendung'
+  iphone_client_documentation : 'iPhone Client'
 
   date:
     order:
