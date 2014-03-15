@@ -1,0 +1,9 @@
+digraph "/Users/markushinkelmann/Projekte/BA/SI Project/iOS version/BiCoR/BiCoR/UI/TableCells" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_37ea6f27a7bfe906d10ccc0e9a45c550 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="UI" fontname="Helvetica", fontsize="10", URL="dir_37ea6f27a7bfe906d10ccc0e9a45c550.html"]
+  dir_1991562231474099d654eefe8d348de3 [shape=box, label="TableCells", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_1991562231474099d654eefe8d348de3.html"];
+  }
+}

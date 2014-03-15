@@ -41,9 +41,6 @@ class PeopleController < ApplicationController
   # GET /people/1.json
   # GET /people/1.xml
   def show
-    #render :text => params.inspect
-
-    #TODO: find_by_id beruecksichtigt scope nicht ?!
     @person = Person.find_by_id(params[:id])
 
     if @person && @person.user_id == current_user.id

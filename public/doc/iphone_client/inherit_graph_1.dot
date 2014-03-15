@@ -1,0 +1,17 @@
+digraph "Graphical Class Hierarchy"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="\<MFMailComposeViewController\lDelegate\>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DataCellMail",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_data_cell_mail.html"];
+  Node3 [label="UITableViewCell",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="DataCell",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_data_cell.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="DataCellPhone",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_data_cell_phone.html"];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="HeaderCell",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$interface_header_cell.html"];
+}

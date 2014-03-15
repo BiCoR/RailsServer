@@ -1,0 +1,9 @@
+digraph "/Users/markushinkelmann/Projekte/BA/SI Project/iOS version/BiCoR/BiCoR/Server Communication" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_b3a480b2c690a265a2e1994c45ab9cfb {
+    graph [ bgcolor="#ddddee", pencolor="black", label="BiCoR" fontname="Helvetica", fontsize="10", URL="dir_b3a480b2c690a265a2e1994c45ab9cfb.html"]
+  dir_6a80c02810fb061fd2d97ee0992e0e81 [shape=box, label="Server Communication", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_6a80c02810fb061fd2d97ee0992e0e81.html"];
+  }
+}

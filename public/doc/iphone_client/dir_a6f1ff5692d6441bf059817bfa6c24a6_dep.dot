@@ -1,0 +1,13 @@
+digraph "/Users/markushinkelmann/Projekte/BA/SI Project/iOS version/BiCoR" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_020b5f9b3fcd055abc0154ad1a245bf3 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="iOS version" fontname="Helvetica", fontsize="10", URL="dir_020b5f9b3fcd055abc0154ad1a245bf3.html"]
+  subgraph clusterdir_a6f1ff5692d6441bf059817bfa6c24a6 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_a6f1ff5692d6441bf059817bfa6c24a6.html"];
+    dir_a6f1ff5692d6441bf059817bfa6c24a6 [shape=plaintext label="BiCoR"];
+    dir_b3a480b2c690a265a2e1994c45ab9cfb [shape=box label="BiCoR" color="red" fillcolor="white" style="filled" URL="dir_b3a480b2c690a265a2e1994c45ab9cfb.html"];
+  }
+  }
+}
