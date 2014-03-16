@@ -1,20 +1,6 @@
 ContactApp::Application.routes.draw do
 
-  #devise_for :users, :controllers => {:sessions => 'sessions'}
   devise_for :users, :path => '', :path_names => {:sign_in => 'login', :sign_out => 'logout'}, :controllers => {:sessions => 'sessions'}
-
-  #devise_for :users, :skip => [:sessions]
-  #as :user do
-  #  get 'signin' => 'devise/sessions#new', :as => :new_user_session
-  #  post 'signin' => 'devise/sessions#create', :as => :user_session
-  #  #delete 'signout' => 'devise/sessions#destroy', :as => :destroy_user_session
-  #  match 'signout' => 'devise/sessions#destroy', :as => :destroy_user_session,
-  #        :via => Devise.mappings[:user].sign_out_via
-  #end
-  #
-  #match '/signout' => 'devise/sessions#destroy', :as => :destroy_user_session,
-  #      :via => Devise.mappings[:user].sign_out_via
-  #resources :users
 
   match 'impressum' => 'application#impressum',  :as => :impressum
   match 'documentation' => 'application#documentation',  :as => :documentation
@@ -29,7 +15,6 @@ ContactApp::Application.routes.draw do
   resources :users do
     resources :people #, :module => "people"
   end
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
