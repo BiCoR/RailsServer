@@ -18,6 +18,7 @@ de:
   edit_account : 'Nutzerdaten...'
 
   delete_contact : Kontakt löschen
+  contact_already_exists : Der Kontakt existiert bereits.
 
   impressum : 'Impressum'
   datenschutzerklaerung : 'Datenschutzerklärung'

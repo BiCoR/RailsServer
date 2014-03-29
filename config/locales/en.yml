@@ -28,3 +28,4 @@ en:
   pc_client_documentation : 'PC client'
 
   delete_contact : Delete contact
+  contact_already_exists : Contact already exists.

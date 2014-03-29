@@ -79,16 +79,26 @@ class PeopleController < ApplicationController
   # POST /people.xml
   def create
     #render :text => params.inspect
-    @person = Person.new(params[:person])
-    respond_to do |format|
-      if @person.user == current_user && @person.save
-        format.html { redirect_to user_person_path(:user_id => params[:user_id], :id => @person.id), notice: t('person_successfully_created') }
-        format.json { render json: @person, status: :created, location: @person }
-        format.xml  { render xml:  @person, status: :created, location: @person }
-      else
-        format.html { render action: :new }
-        format.json { render json: @person.errors, status: :unprocessable_entity }
-        format.xml  { render xml: @person.errors, status: :unprocessable_entity }
+    unless Person.where(:user_id => params[:person][:user_id],
+                        :last_name => params[:person][:last_name],
+                        :first_name => params[:person][:first_name],
+                        :geburtsdatum => params[:person][:geburtsdatum]
+                        ).empty?
+      flash[:error] = t(:contact_already_exists)
+      redirect_to(:back)
+      #format.html { render action: :new }
+    else
+      @person = Person.new(params[:person])
+      respond_to do |format|
+        if @person.user == current_user && @person.save
+          format.html { redirect_to user_person_path(:user_id => params[:user_id], :id => @person.id), notice: t('person_successfully_created') }
+          format.json { render json: @person, status: :created, location: @person }
+          format.xml  { render xml:  @person, status: :created, location: @person }
+        else
+          format.html { render action: :new }
+          format.json { render json: @person.errors, status: :unprocessable_entity }
+          format.xml  { render xml: @person.errors, status: :unprocessable_entity }
+        end
       end
     end
   end
