@@ -3,7 +3,9 @@
   <h1><%=t '.title', :default => model_class.model_name.human(:count => 2).titleize %></h1>
 </div>
 <div style="margin-bottom: 10px;">
-  <%= link_to t('.new', :default => t("helpers.links.new")), new_user_person_path, :class => 'btn btn-primary' %>
+  <% if @people.count > 5 %>
+    <%= link_to t('.new', :default => t("helpers.links.new")), new_user_person_path, :class => 'btn btn-primary' %>
+  <% end %>
 </div>
 <table class="table table-striped">
   <thead>

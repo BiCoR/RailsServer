@@ -26,3 +26,5 @@ en:
   web_app_documentation : 'Web application'
   iphone_client_documentation : 'iPhone client'
   pc_client_documentation : 'PC client'
+
+  delete_contact : Delete contact

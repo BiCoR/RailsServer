@@ -8,7 +8,11 @@
   <div class="control-group">
     <%= f.label :first_name, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :first_name, :class => 'text_field' %>
+      <% if @person.new_record? %>
+        <%= f.text_field :first_name, :class => "text_field", :autofocus => "autofocus" %>
+      <% else %>
+        <%= f.text_field :first_name, :class => "text_field" %>
+      <% end %>
     </div>
   </div>
     <div class="control-group">
@@ -65,7 +69,7 @@
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
                 user_people_path, :class => 'btn' %>
     <% unless @person.new_record? %>
-        <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+        <%= link_to t(:delete_contact),
                 user_person_path(@person.user_id, @person.id),
                 :method => 'delete',
                 :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
