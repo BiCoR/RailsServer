@@ -82,7 +82,7 @@ class PeopleController < ApplicationController
     unless Person.where(:user_id => params[:person][:user_id],
                         :last_name => params[:person][:last_name],
                         :first_name => params[:person][:first_name],
-                        :geburtsdatum => params[:person][:geburtsdatum]
+                        #:geburtsdatum => params[:person][:geburtsdatum]
                         ).empty?
       flash[:error] = t(:contact_already_exists)
       redirect_to(:back)
