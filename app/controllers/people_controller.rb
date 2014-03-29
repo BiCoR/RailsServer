@@ -118,7 +118,7 @@ class PeopleController < ApplicationController
   def destroy
     @person = Person.find_by_id(params[:id])
     redirect_to_default unless @person && @person.user == current_user
-    @person.destroy
+    @person.destroy if @person
 
     respond_to do |format|
       format.html { redirect_to user_people_url }

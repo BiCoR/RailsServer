@@ -64,5 +64,12 @@
     <%= f.submit nil, :class => 'btn btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
                 user_people_path, :class => 'btn' %>
+    <% unless @person.new_record? %>
+        <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                user_person_path(@person.user_id, @person.id),
+                :method => 'delete',
+                :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                :class => 'btn btn-danger' %>
+    <% end %>
   </div>
 <% end %>
